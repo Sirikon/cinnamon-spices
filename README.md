@@ -1,1 +1,1 @@
-# cinnamon-spices
+# Cinnamon Spices Website
