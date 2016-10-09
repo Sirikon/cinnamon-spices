@@ -40,6 +40,10 @@ There's already a gulp task for this, just run:
 gulp release
 ```
 
+## Style Architecture ##
+
+ITCSS: [ITCSS: Scalable and maintainable CSS architecture - xfive.co](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+
 ## License ##
 ```
 MIT License
