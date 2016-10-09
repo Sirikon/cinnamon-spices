@@ -1,0 +1,11 @@
+$header-max-width: 1140px;
+$header-color: #fff;
+$header-padding-vertical: 5px;
+
+.cs-header {
+    color: $header-color;
+    display: block;
+    margin: auto;
+    max-width: $header-max-width;
+    padding: $header-padding-vertical 0;
+}

@@ -1,0 +1,10 @@
+@import '../settings/_index';
+@import '../tools/_index';
+
+$landing-jumbotron-height: 526px;
+
+.cs-landing-jumbotron {
+    @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
+    background-color: $brand-color-darker;
+    height: $landing-jumbotron-height;
+}

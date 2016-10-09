@@ -1,0 +1,10 @@
+@import '../settings/__index';
+
+html,
+body {
+    background-color: $main-background-color;
+}
+
+* {
+    font-family: $font-open-sans;
+}
