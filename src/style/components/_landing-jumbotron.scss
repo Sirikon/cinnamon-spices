@@ -7,4 +7,35 @@ $landing-jumbotron-height: 526px;
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
     height: $landing-jumbotron-height;
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-jumbotron-content {
+    width: 100%;
+    max-width: $global-max-width;
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    > div {
+        width: 100%;
+    }
+
+    h1 {
+        font-family: $font-roboto;
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        width: 520px;
+        color: #843f18;
+        font-weight: bold;
+    }
 }

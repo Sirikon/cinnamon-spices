@@ -9,5 +9,9 @@ module.exports = {
     markup: {
         src: 'src/index.html',
         dist: 'dist/'
+    },
+    resources: {
+        src: 'src/resources/**/*',
+        dist: 'dist/resources/'
     }
 }

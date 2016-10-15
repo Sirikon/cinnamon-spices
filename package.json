@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp",
     "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {

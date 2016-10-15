@@ -1,11 +1,70 @@
-$header-max-width: 1140px;
 $header-color: #fff;
-$header-padding-vertical: 5px;
+$header-padding-vertical: 17px;
+$header-height: 36px;
 
 .cs-header {
     color: $header-color;
     display: block;
+    height: $header-height;
     margin: auto;
-    max-width: $header-max-width;
+    width: 100%;
+    max-width: $global-max-width;
     padding: $header-padding-vertical 0;
+}
+
+.cs-header-logo {
+    display: block;
+    float: left;
+    padding-top: 5px;
+
+    $subtitle-color: #fdfdfd;
+
+    img {
+        display: block;
+        width: 165px;
+    }
+
+    div {
+        color: $subtitle-color;
+        display: block;
+        font-family: $font-roboto;
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 1px;
+        text-align: right;
+    }
+}
+
+.cs-header-menu {
+    float: right;
+    text-align: right;
+
+    $link-separation-between: 28px;
+    $signup-horizontal-padding: $link-separation-between / 1.7;
+
+    &-link,
+    &-login,
+    &-signup {
+        color: $header-color;
+        font-family: $font-roboto;
+        font-size: 14px;
+        padding: 0 $link-separation-between / 2;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    &-login {
+        padding-left: $link-separation-between / 1.2;
+        padding-right: $signup-horizontal-padding;
+    }
+
+    &-signup {
+        background-color: $primary-color;
+        border-radius: 2px;
+        display: inline-block;
+        height: $header-height;
+        line-height: $header-height;
+        padding: 0 $signup-horizontal-padding;
+    }
 }
