@@ -1,10 +1,10 @@
 'use strict';
 
-const paths = require('../options/paths');
+var paths = require('../options/paths');
 
-module.exports = (gulp) => {
-    gulp.task('markup', () => {
+module.exports = function(gulp) {
+    gulp.task('markup', function() {
         return gulp.src(paths.markup.src)
             .pipe(gulp.dest(paths.markup.dist));
     });
-}
+};

@@ -35,7 +35,22 @@ $landing-jumbotron-height: 526px;
 
     p {
         width: 520px;
-        color: #843f18;
+        //color: #843f18;
+        color: #d09f85;
         font-weight: bold;
     }
+}
+
+.cs-jumbotron-learn-how-today {
+    height: 36px;
+    background-color: #dc6830;
+    color: white;
+    display: inline-block;
+    line-height: 36px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 0 26px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
 }

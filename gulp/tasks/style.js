@@ -5,19 +5,19 @@ var sourcemaps = require('gulp-sourcemaps');
 var sassLint = require('gulp-sass-lint');
 var rename = require("gulp-rename");
 
-const paths = require('../options/paths');
-const sassLintRules = require('../options/sass-lint-rules');
+var paths = require('../options/paths');
+var sassLintRules = require('../options/sass-lint-rules');
 
-module.exports = (gulp) => {
+module.exports = function(gulp) {
 
-    gulp.task('style:lint', () => {
-        return gulp.src(paths.style.src_watch)
-            .pipe(sassLint({ rules: sassLintRules }))
-            .pipe(sassLint.format())
-            .pipe(sassLint.failOnError());
-    });
+    // gulp.task('style:lint', function() {
+    //     return gulp.src(paths.style.src_watch)
+    //         .pipe(sassLint({ rules: sassLintRules }))
+    //         .pipe(sassLint.format())
+    //         .pipe(sassLint.failOnError());
+    // });
 
-    gulp.task('style:dev', () => {
+    gulp.task('style:dev', function() {
         return gulp.src(paths.style.src)
             .pipe(sourcemaps.init())
             .pipe(sass()
@@ -27,7 +27,7 @@ module.exports = (gulp) => {
             .pipe(gulp.dest(paths.style.dist));
     });
 
-    gulp.task('style:release', () => {
+    gulp.task('style:release', function() {
         return gulp.src(paths.style.src)
             .pipe(sass({outputStyle: 'compressed'})
                 .on('error', sass.logError))
@@ -35,4 +35,4 @@ module.exports = (gulp) => {
             .pipe(gulp.dest(paths.style.dist));
     });
 
-}
+};
