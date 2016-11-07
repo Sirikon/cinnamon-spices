@@ -1,12 +1,12 @@
 @import '../settings/_index';
 @import '../tools/_index';
 
-$landing-jumbotron-height: 526px;
+$landing-jumbotron-height: 450px;
 
 .cs-landing-jumbotron {
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
-    height: $landing-jumbotron-height;
+    //height: $landing-jumbotron-height;
     display: flex;
     flex-direction: column;
 }
@@ -21,6 +21,11 @@ $landing-jumbotron-height: 526px;
     justify-content: center;
     align-items: center;
     color: white;
+    height: 380px;
+
+    background-image: url(/resources/bg/jumbotron-mountain.png);
+    background-position: 600px 1px;
+    background-repeat: no-repeat;
 
     > div {
         width: 100%;

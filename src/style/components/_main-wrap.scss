@@ -1,6 +1,5 @@
 .cs-main-wrap {
   color: #000;
-  height: 36px;
   margin: auto;
   width: 100%;
   max-width: 1120px;
@@ -32,6 +31,10 @@
       }
       &:last-child {
         border-bottom: none;
+      }
+
+      &.active {
+        background: linear-gradient(to bottom, #e7e7e7 0%,#e1e1e1 100%);
       }
 
       a {

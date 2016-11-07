@@ -7,7 +7,7 @@ module.exports = {
         dist: 'dist/'
     },
     markup: {
-        src: 'src/index.html',
+        src: 'src/*.html',
         dist: 'dist/'
     },
     resources: {
