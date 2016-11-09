@@ -5,19 +5,19 @@ var sourcemaps = require('gulp-sourcemaps');
 var sassLint = require('gulp-sass-lint');
 var rename = require("gulp-rename");
 
-var paths = require('../options/paths');
-var sassLintRules = require('../options/sass-lint-rules');
+const paths = require('../options/paths');
+const sassLintRules = require('../options/sass-lint-rules');
 
-module.exports = function(gulp) {
+module.exports = (gulp) => {
 
-    // gulp.task('style:lint', function() {
-    //     return gulp.src(paths.style.src_watch)
-    //         .pipe(sassLint({ rules: sassLintRules }))
-    //         .pipe(sassLint.format())
-    //         .pipe(sassLint.failOnError());
-    // });
+    gulp.task('style:lint', () => {
+        return gulp.src(paths.style.src_watch)
+            .pipe(sassLint({ rules: sassLintRules }))
+            .pipe(sassLint.format())
+            .pipe(sassLint.failOnError());
+});
 
-    gulp.task('style:dev', function() {
+    gulp.task('style:dev', () => {
         return gulp.src(paths.style.src)
             .pipe(sourcemaps.init())
             .pipe(sass()
@@ -25,14 +25,14 @@ module.exports = function(gulp) {
             .pipe(rename('style.css'))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(paths.style.dist));
-    });
+});
 
-    gulp.task('style:release', function() {
+    gulp.task('style:release', () => {
         return gulp.src(paths.style.src)
             .pipe(sass({outputStyle: 'compressed'})
                 .on('error', sass.logError))
             .pipe(rename('style.css'))
             .pipe(gulp.dest(paths.style.dist));
-    });
+});
 
-};
+}

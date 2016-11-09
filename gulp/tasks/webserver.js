@@ -2,14 +2,14 @@
 
 var connect = require('gulp-connect');
 
-var paths = require('../options/paths');
+const paths = require('../options/paths');
 
-module.exports = function(gulp) {
-    gulp.task('webserver', function() {
+module.exports = (gulp) => {
+    gulp.task('webserver', () => {
         connect.server({
             name: 'Dev WebServer',
             root: ['dist'],
             port: 8000
         });
     });
-};
+}
