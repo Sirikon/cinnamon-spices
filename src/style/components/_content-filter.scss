@@ -1,0 +1,33 @@
+.cs-content-filter {
+    border: solid 1px silver;
+    border-radius: 4px;
+    background-color: white;
+    color: #151515;
+    overflow: hidden;
+
+    ul {
+        margin: 0;
+        //padding: 0;
+        list-style: none;
+        padding: 0 18px;
+
+        li {
+            float: left;
+            margin: 0 18px;
+            a {
+                line-height: 50px;
+                display: block;
+                padding: 0;
+                text-decoration: none;
+                color: #161616;
+                font-size: 14px;
+                &:hover {
+                    color: #dc682f;
+                }
+            }
+            &.active {
+                border-bottom: 5px solid #646464;
+            }
+        }
+    }
+}

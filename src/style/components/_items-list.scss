@@ -1,95 +1,91 @@
 .cs-items-list-container {
-  margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .cs-items-list-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
 }
 
-.cs-items-list-item {
-  //flex-grow: 1;
-  //display: inline-block;
-  width: 435px;
-  height: 300px;
-  border: solid 1px silver;
-  border-radius: 2px;
-  cursor: pointer;
-
-  &:hover {
-    //background-color: #e0e0e0;
-
-    .image {
-      .overlay {
-        opacity: 0.75;
-      }
-      img {
-        opacity: 1;
-      }
-    }
-  }
-
-  .image {
+.cs-items-list-image {
     position: relative;
     line-height: 0;
     text-align: center;
     background-color: white;
 
-    .overlay {
-      height: 30px;
-      opacity: 0.5;
-      background-color: black;
-      z-index: 2;
-      position: absolute;
-      width: 100%;
-
-      .title {
-        position: absolute;
-        left: 10px;
-        top: 15px;
-        color: white;
-        font-size: 14px;
-      }
-    }
-
     img {
-      max-width: 435px;
-      max-height: 245px;
-      opacity: 0.85;
+        max-width: 435px;
+        max-height: 245px;
+        opacity: 0.85;
     }
-  }
+}
 
-  .info-bar {
+.cs-items-list-overlay {
+    height: 30px;
+    opacity: 0.5;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+.cs-items-list-title {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+.cs-items-list-item {
+    width: 435px;
+    height: 300px;
+    border: solid 1px silver;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+        .image {
+            .overlay {
+                opacity: 0.75;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    i.cs-icon-time-ago {
+        display: inline-block;
+        width: 16px;
+        height: 12px;
+        background: url(/resources/icons/time-ago.png) no-repeat 0 0;
+    }
+
+    i.cs-icon-download {
+        display: inline-block;
+        width: 18px;
+        height: 15px;
+        background: url(/resources/icons/download.png) no-repeat 0 0;
+    }
+}
+
+.cs-items-list-info-bar {
     height: 55px;
     padding: 10px;
     box-sizing: border-box;
     font-size: 14px;
 
     a {
-      text-transform: none;
+        text-transform: none;
     }
 
     span {
-      line-height: 35px;
-      height: 35px;
-      display: inline-block;
-      float: right;
-      margin-left: 10px;
+        line-height: 35px;
+        height: 35px;
+        display: inline-block;
+        float: right;
+        margin-left: 10px;
     }
-  }
-
-  i.cs-icon-time-ago {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    background: url(/resources/icons/time-ago.png) no-repeat 0 0;
-  }
-
-  i.cs-icon-download {
-    display: inline-block;
-    width: 18px;
-    height: 15px;
-    background: url(/resources/icons/download.png) no-repeat 0 0;
-  }
 }
