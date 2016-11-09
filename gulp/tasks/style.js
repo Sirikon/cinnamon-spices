@@ -12,7 +12,7 @@ module.exports = (gulp) => {
 
     gulp.task('style:lint', () => {
         return gulp.src(paths.style.src_watch)
-            .pipe(sassLint({ rules: sassLintRules }))
+            .pipe(sassLint({rules: sassLintRules}))
             .pipe(sassLint.format())
             .pipe(sassLint.failOnError());
     });

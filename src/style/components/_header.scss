@@ -43,12 +43,23 @@ $header-height: 36px;
     $signup-horizontal-padding: $link-separation-between / 1.7;
 
     &-link,
+    &-login {
+        &:hover {
+            color: #dc682f;
+        }
+
+        &.active {
+            border-bottom: 1px solid #dc682f;
+        }
+    }
+
+    &-link,
     &-login,
     &-signup {
         color: $header-color;
         font-family: $font-roboto;
         font-size: 14px;
-        padding: 0 $link-separation-between / 2;
+        padding: 6px $link-separation-between / 2;
         text-decoration: none;
         text-transform: uppercase;
         vertical-align: middle;

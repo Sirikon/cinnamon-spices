@@ -1,12 +1,12 @@
 @import '../settings/_index';
 @import '../tools/_index';
 
-$landing-jumbotron-height: 526px;
+$landing-jumbotron-height: 450px;
 
 .cs-landing-jumbotron {
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
-    height: $landing-jumbotron-height;
+    //height: $landing-jumbotron-height;
     display: flex;
     flex-direction: column;
 }
@@ -21,6 +21,11 @@ $landing-jumbotron-height: 526px;
     justify-content: center;
     align-items: center;
     color: white;
+    height: 380px;
+
+    background-image: url(/resources/bg/jumbotron-mountain.png);
+    background-position: 600px 1px;
+    background-repeat: no-repeat;
 
     > div {
         width: 100%;
@@ -35,7 +40,22 @@ $landing-jumbotron-height: 526px;
 
     p {
         width: 520px;
-        color: #843f18;
+        //color: #843f18;
+        color: #d09f85;
         font-weight: bold;
     }
+}
+
+.cs-jumbotron-learn-how-today {
+    height: 36px;
+    background-color: #dc6830;
+    color: white;
+    display: inline-block;
+    line-height: 36px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 0 26px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
 }
