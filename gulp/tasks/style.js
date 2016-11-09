@@ -12,10 +12,10 @@ module.exports = (gulp) => {
 
     gulp.task('style:lint', () => {
         return gulp.src(paths.style.src_watch)
-            .pipe(sassLint({ rules: sassLintRules }))
+            .pipe(sassLint({rules: sassLintRules}))
             .pipe(sassLint.format())
             .pipe(sassLint.failOnError());
-});
+    });
 
     gulp.task('style:dev', () => {
         return gulp.src(paths.style.src)
@@ -25,7 +25,7 @@ module.exports = (gulp) => {
             .pipe(rename('style.css'))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(paths.style.dist));
-});
+    });
 
     gulp.task('style:release', () => {
         return gulp.src(paths.style.src)
@@ -33,6 +33,6 @@ module.exports = (gulp) => {
                 .on('error', sass.logError))
             .pipe(rename('style.css'))
             .pipe(gulp.dest(paths.style.dist));
-});
+    });
 
 }
