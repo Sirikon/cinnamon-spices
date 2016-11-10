@@ -1,13 +1,16 @@
+$button-bg-color: #dc6830;
+$button-text-color: #fff;
+
 .cs-button {
-    height: 36px;
-    background-color: #dc6830;
-    color: white;
-    display: inline-block;
-    line-height: 36px;
+    background-color: $button-bg-color;
     border-radius: 2px;
-    text-transform: uppercase;
-    padding: 0 26px;
+    color: $button-text-color;
+    display: inline-block;
     font-size: 14px;
     font-weight: bolder;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 26px;
     text-decoration: none;
+    text-transform: uppercase;
 }

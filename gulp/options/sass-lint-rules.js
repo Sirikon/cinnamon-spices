@@ -6,5 +6,11 @@ module.exports = {
         size: 4
     }],
     'no-duplicate-properties': 0,
-    'no-vendor-prefixes': 0
+    'no-vendor-prefixes': 0,
+    'nesting-depth': [
+        1,
+        {
+            'max-depth': 4
+        }
+    ],
 };

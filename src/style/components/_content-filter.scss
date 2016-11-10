@@ -1,32 +1,39 @@
+$color-silver: #c0c0c0;
+$color-white: #fff;
+$filter-link-color: #161616;
+$filter-link-hover-color: #161616;
+$filter-active-link-border-bottom-color: #646464;
+
 .cs-content-filter {
-    border: solid 1px silver;
+    background-color: $color-white;
+    border: solid 1px $color-silver;
     border-radius: 4px;
-    background-color: white;
-    color: #151515;
     overflow: hidden;
 
     ul {
-        margin: 0;
-        //padding: 0;
         list-style: none;
+        margin: 0;
         padding: 0 18px;
 
         li {
             float: left;
             margin: 0 18px;
+
             a {
-                line-height: 50px;
+                color: $filter-link-color;
                 display: block;
+                font-size: 14px;
+                line-height: 50px;
                 padding: 0;
                 text-decoration: none;
-                color: #161616;
-                font-size: 14px;
+
                 &:hover {
-                    color: #dc682f;
+                    color: $filter-link-hover-color;
                 }
             }
+
             &.active {
-                border-bottom: 5px solid #646464;
+                border-bottom: 5px solid $filter-active-link-border-bottom-color;
             }
         }
     }

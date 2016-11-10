@@ -1,91 +1,98 @@
+$color-white: #fff;
+$color-silver: #c0c0c0;
+$color-black: #000;
+
 .cs-items-list-container {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
 }
 
 .cs-items-list-row {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
 }
 
 .cs-items-list-image {
-    position: relative;
+    background-color: $color-white;
     line-height: 0;
+    position: relative;
     text-align: center;
-    background-color: white;
 
     img {
-        max-width: 435px;
         max-height: 245px;
-        opacity: 0.85;
+        max-width: 435px;
+        opacity: .85;
     }
 }
 
 .cs-items-list-overlay {
+    background-color: $color-black;
     height: 30px;
-    opacity: 0.5;
-    background-color: black;
-    z-index: 2;
+    opacity: .5;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
 .cs-items-list-title {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: white;
+    color: $color-white;
     font-size: 14px;
+    left: 10px;
+    position: absolute;
+    top: 15px;
 }
 
 .cs-items-list-item {
-    width: 435px;
-    height: 300px;
-    border: solid 1px silver;
+    border: solid 1px $color-silver;
     border-radius: 2px;
     cursor: pointer;
+    height: 300px;
+    width: 435px;
 
     &:hover {
         .image {
             .overlay {
-                opacity: 0.75;
+                opacity: .75;
             }
+
             img {
                 opacity: 1;
             }
         }
     }
 
-    i.cs-icon-time-ago {
-        display: inline-block;
-        width: 16px;
-        height: 12px;
-        background: url(/resources/icons/time-ago.png) no-repeat 0 0;
-    }
+    i {
+        .cs-icon-time-ago {
+            background: url('/resources/icons/time-ago.png') no-repeat 0 0;
+            display: inline-block;
+            height: 12px;
+            width: 16px;
+        }
 
-    i.cs-icon-download {
-        display: inline-block;
-        width: 18px;
-        height: 15px;
-        background: url(/resources/icons/download.png) no-repeat 0 0;
+        .cs-icon-download {
+            background: url('/resources/icons/download.png') no-repeat 0 0;
+            display: inline-block;
+            height: 15px;
+            width: 18px;
+        }
     }
 }
 
 .cs-items-list-info-bar {
-    height: 55px;
-    padding: 10px;
     box-sizing: border-box;
     font-size: 14px;
+    height: 55px;
+    padding: 10px;
 
     a {
         text-transform: none;
     }
 
     span {
-        line-height: 35px;
-        height: 35px;
         display: inline-block;
         float: right;
+        height: 35px;
+        line-height: 35px;
         margin-left: 10px;
     }
 }
