@@ -42,7 +42,13 @@ gulp release
 
 ## Style Architecture ##
 
-ITCSS: [ITCSS: Scalable and maintainable CSS architecture - xfive.co](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+ITCSS ( Inverted Triangle CSS )
+
+Resources:
+* [Harry Roberts - Managing CSS Projects with ITCSS ](https://www.youtube.com/watch?v=1OKZOV-iLj4)
+* [ITCSS: Scalable and maintainable CSS architecture - xfive.co](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+* [Manage large-scale web projects with new CSS architecture ITCSS](http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731)
+
 
 ## License ##
 ```
