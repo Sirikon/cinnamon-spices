@@ -7,9 +7,9 @@ $header-height: 36px;
     display: block;
     height: $header-height;
     margin: auto;
-    width: 100%;
     max-width: $global-max-width;
     padding: $header-padding-vertical 0;
+    width: 100%;
 }
 
 .cs-header-logo {
@@ -42,14 +42,17 @@ $header-height: 36px;
     $link-separation-between: 28px;
     $signup-horizontal-padding: $link-separation-between / 1.7;
 
+    $link-hover-color: #dc682f;
+    $link-active-color: #dc682f;
+
     &-link,
     &-login {
         &:hover {
-            color: #dc682f;
+            color: $link-hover-color;
         }
 
         &.active {
-            border-bottom: 1px solid #dc682f;
+            border-bottom: 1px solid $link-active-color;
         }
     }
 

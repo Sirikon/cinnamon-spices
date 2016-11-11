@@ -2,30 +2,34 @@
 @import '../tools/_index';
 
 $landing-jumbotron-height: 450px;
+$color-white: #fff;
+$learn-how-button-bg-color: #dc6830;
+$intro-text-color: #d09f85;
 
 .cs-landing-jumbotron {
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
-    //height: $landing-jumbotron-height;
     display: flex;
     flex-direction: column;
 }
 
 .cs-jumbotron-content {
-    width: 100%;
-    max-width: $global-max-width;
-    margin: auto;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    height: 380px;
 
-    background-image: url(/resources/bg/jumbotron-mountain.png);
+    background-image: url('/resources/bg/jumbotron-mountain.png');
     background-position: 600px 1px;
     background-repeat: no-repeat;
+
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 380px;
+    justify-content: center;
+    margin: auto;
+    max-width: $global-max-width;
+    width: 100%;
+
 
     > div {
         width: 100%;
@@ -34,28 +38,27 @@ $landing-jumbotron-height: 450px;
     h1 {
         font-family: $font-roboto;
         font-size: 50px;
-        margin-top: 0;
         margin-bottom: 20px;
+        margin-top: 0;
     }
 
     p {
-        width: 520px;
-        //color: #843f18;
-        color: #d09f85;
+        color: $intro-text-color;
         font-weight: bold;
+        width: 520px;
     }
 }
 
 .cs-jumbotron-learn-how-today {
-    height: 36px;
-    background-color: #dc6830;
-    color: white;
-    display: inline-block;
-    line-height: 36px;
+    background-color: $learn-how-button-bg-color;
     border-radius: 2px;
-    text-transform: uppercase;
-    padding: 0 26px;
+    color: $color-white;
+    display: inline-block;
     font-size: 14px;
     font-weight: bolder;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 26px;
     text-decoration: none;
+    text-transform: uppercase;
 }

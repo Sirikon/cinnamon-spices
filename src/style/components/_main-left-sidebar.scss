@@ -1,41 +1,55 @@
+$link-color: #161616;
+$link-hover-color: #000;
+$title-color: #858585;
+$color-silver: #c0c0c0;
+
+$gradient-a: #fbfbfb;
+$gradient-b: #f7f7f7;
+$gradient-c: #f1f1f1;
+$gradient-d: #e7e7e7;
+$gradient-e: #e1e1e1;
+
 .cs-main-left-sidebar {
     flex-grow: 0;
-    width: 230px;
+    width: 200px;
 
     .title {
-        color: #858585;
+        color: $title-color;
     }
 
     ul {
+        border: solid 1px $color-silver;
+        border-radius: 2px;
         list-style: none;
         padding: 0;
-        border: solid 1px silver;
-        border-radius: 2px;
-        width: 190px;
+        width: 170px;
 
         li {
+            background: linear-gradient(to bottom, $gradient-a 0%, $gradient-b 100%);
+            border-bottom: solid 1px $color-silver;
             padding: 5px 20px;
-            background: linear-gradient(to bottom, #fbfbfb 0%, #f7f7f7 100%);
-            border-bottom: solid 1px silver;
+
             &:hover {
-                background: linear-gradient(to bottom, #f7f7f7 0%, #f1f1f1 100%);
+                background: linear-gradient(to bottom, $gradient-b 0%, $gradient-c 100%);
             }
+
             &:last-child {
-                border-bottom: none;
+                border-bottom: 0;
             }
 
             &.active {
-                background: linear-gradient(to bottom, #e7e7e7 0%, #e1e1e1 100%);
+                background: linear-gradient(to bottom, $gradient-d 0%, $gradient-e 100%);
             }
 
             a {
-                line-height: 38px;
+                color: $link-color;
                 display: block;
-                color: #161616;
-                text-decoration: none;
                 font-size: 14px;
+                line-height: 38px;
+                text-decoration: none;
+
                 &:hover {
-                    color: black;
+                    color: $link-hover-color;
                 }
             }
         }
