@@ -1,0 +1,7 @@
+// This can be refined to affect all headings seperately
+
+h3 {
+    &.cs-heading-large {
+        font-size: 3em;
+    }
+}

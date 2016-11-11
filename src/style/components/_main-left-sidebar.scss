@@ -1,20 +1,9 @@
-$link-color: #161616;
-$link-hover-color: #000;
-$title-color: #858585;
-$color-silver: #c0c0c0;
-
-$gradient-a: #fbfbfb;
-$gradient-b: #f7f7f7;
-$gradient-c: #f1f1f1;
-$gradient-d: #e7e7e7;
-$gradient-e: #e1e1e1;
-
 .cs-main-left-sidebar {
     flex-grow: 0;
     width: 200px;
 
     .title {
-        color: $title-color;
+        color: $sidebar-title-color;
     }
 
     ul {
@@ -25,12 +14,12 @@ $gradient-e: #e1e1e1;
         width: 170px;
 
         li {
-            background: linear-gradient(to bottom, $gradient-a 0%, $gradient-b 100%);
+            background: linear-gradient(to bottom, $sidebar-gradient-a 0%, $sidebar-gradient-b 100%);
             border-bottom: solid 1px $color-silver;
             padding: 5px 20px;
 
             &:hover {
-                background: linear-gradient(to bottom, $gradient-b 0%, $gradient-c 100%);
+                background: linear-gradient(to bottom, $sidebar-gradient-b 0%, $sidebar-gradient-c 100%);
             }
 
             &:last-child {
@@ -38,18 +27,18 @@ $gradient-e: #e1e1e1;
             }
 
             &.active {
-                background: linear-gradient(to bottom, $gradient-d 0%, $gradient-e 100%);
+                background: linear-gradient(to bottom, $sidebar-gradient-d 0%, $sidebar-gradient-e 100%);
             }
 
             a {
-                color: $link-color;
+                color: $sidebar-link-color;
                 display: block;
                 font-size: 14px;
                 line-height: 38px;
                 text-decoration: none;
 
                 &:hover {
-                    color: $link-hover-color;
+                    color: $sidebar-link-hover-color;
                 }
             }
         }

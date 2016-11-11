@@ -1,1 +1,43 @@
+// GLOBAL Variabels
 $global-max-width: 1120px;
+$main-background-color: $color-off-white-1;
+$site-padding: 17px;
+
+// Button
+$button-bg-color: $primary-color;
+$button-bg-hover: darken($primary-color, 5%);
+$button-text-color: $color-white;
+
+// Jumbotron
+$landing-jumbotron-height: 450px;
+$intro-text-color: #d09f85;
+
+// Header
+$header-color: $color-white;
+$header-padding-vertical: $site-padding;
+$header-height: 36px;
+
+// Content Filter
+$filter-link-color: #161616;
+$filter-link-hover-color: #161616;
+$filter-active-link-border-bottom-color: #646464;
+
+// Item Card
+$item-title-color: $primary-color;
+
+// Main Sidebar
+$sidebar-link-color: #161616;
+$sidebar-link-hover-color: $color-black;
+$sidebar-title-color: #858585;
+$sidebar-gradient-a: #fbfbfb;
+$sidebar-gradient-b: #f7f7f7;
+$sidebar-gradient-c: #f1f1f1;
+$sidebar-gradient-d: #e7e7e7;
+$sidebar-gradient-e: #e1e1e1;
+
+// Main Wrap
+$main-color: $color-black;
+
+// Footer
+$footer-bg-color: $color-black;
+$footer-bg-fact: $primary-color;
