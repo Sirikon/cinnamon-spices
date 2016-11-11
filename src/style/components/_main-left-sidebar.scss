@@ -11,7 +11,7 @@ $gradient-e: #e1e1e1;
 
 .cs-main-left-sidebar {
     flex-grow: 0;
-    width: 230px;
+    width: 200px;
 
     .title {
         color: $title-color;
@@ -22,7 +22,7 @@ $gradient-e: #e1e1e1;
         border-radius: 2px;
         list-style: none;
         padding: 0;
-        width: 190px;
+        width: 170px;
 
         li {
             background: linear-gradient(to bottom, $gradient-a 0%, $gradient-b 100%);

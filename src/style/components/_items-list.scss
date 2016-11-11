@@ -1,6 +1,8 @@
+$color-almost-white: #f8f8f8;
 $color-white: #fff;
 $color-silver: #c0c0c0;
 $color-black: #000;
+$title-color: #dc6830;
 
 .cs-items-list-container {
     margin: 20px 0 0;
@@ -18,10 +20,51 @@ $color-black: #000;
     position: relative;
     text-align: center;
 
-    img {
-        max-height: 245px;
-        max-width: 435px;
+    .cs-items-bg-image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 245px;
         opacity: .85;
+        width: 435px;
+    }
+
+    &:hover {
+        .cs-items-list-overlay {
+            opacity: .75;
+        }
+
+        .cs-items-bg-image {
+            opacity: 1;
+        }
+    }
+}
+
+a {
+    &.cs-items-list-details {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        line-height: 32px;
+        padding: 10px;
+        text-decoration: none;
+        width: 275px;
+
+        & > img {
+            max-height: 48px;
+            max-width: 48px;
+        }
+
+        & > label {
+            color: $title-color;
+            cursor: pointer;
+            flex-grow: 1;
+            font-size: 20px;
+            line-height: 32px;
+            margin-left: 10px;
+            text-decoration: none;
+            width: 100%;
+        }
     }
 }
 
@@ -43,42 +86,19 @@ $color-black: #000;
 }
 
 .cs-items-list-item {
+    align-items: stretch;
+    background-color: $color-white;
     border: solid 1px $color-silver;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 300px;
-    width: 435px;
-
-    &:hover {
-        .image {
-            .overlay {
-                opacity: .75;
-            }
-
-            img {
-                opacity: 1;
-            }
-        }
-    }
-
-    i {
-        .cs-icon-time-ago {
-            background: url('/resources/icons/time-ago.png') no-repeat 0 0;
-            display: inline-block;
-            height: 12px;
-            width: 16px;
-        }
-
-        .cs-icon-download {
-            background: url('/resources/icons/download.png') no-repeat 0 0;
-            display: inline-block;
-            height: 15px;
-            width: 18px;
-        }
-    }
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    width: auto;
 }
 
 .cs-items-list-info-bar {
+    background-color: $color-almost-white;
     box-sizing: border-box;
     font-size: 14px;
     height: 55px;
@@ -94,5 +114,17 @@ $color-black: #000;
         height: 35px;
         line-height: 35px;
         margin-left: 10px;
+
+        &.downloads-cnt {
+            background: url('resources/icons/download.png') no-repeat 0 10px;
+            padding-left: 20px;
+        }
+
+        &.time-ago {
+            background: url('resources/icons/time-ago.png') no-repeat 0 12px;
+            padding-left: 20px;
+        }
     }
+
 }
+

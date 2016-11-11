@@ -14,3 +14,17 @@ $button-text-color: #fff;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.cs-button-sm {
+    background-color: $button-bg-color;
+    border-radius: 2px;
+    color: $button-text-color;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bolder;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
