@@ -1,0 +1,64 @@
+.cs-footer {
+    background-color: $footer-bg-color;
+}
+
+.cs-footer-fact {
+    background-color: $footer-bg-fact;
+    padding: $header-padding-vertical * 2;
+    text-align: center;
+
+    h3 {
+        color: $color-white;
+        font-family: $font-merriweather;
+        font-size: 28px;
+        letter-spacing: .75px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}
+
+.cs-footer-download-card {
+    font-family: $font-open-sans;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: ($site-padding * 2) 0 $site-padding;
+}
+
+.cs-footer-download-item {
+    margin: $site-padding 0;
+    text-align: center;
+
+    h3 {
+        color: $color-white;
+        font-weight: 100;
+        margin: 0 0 ($site-padding / 2);
+    }
+
+    span {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
+
+.cs-footer-sub-navigation {
+    font-size: 12px;
+
+    a {
+        color: $color-white;
+        font-weight: bold;
+
+        &:hover {
+            color: $primary-color-dark;
+        }
+    }
+
+    li {
+        padding-left: 14px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
