@@ -7,7 +7,6 @@ website design.
 
  - node
  - npm
- - gulp CLI (`npm install -g gulp`)
 
 The project has no dependency on any editor, use the one you feel
 comfortable with.
@@ -22,7 +21,7 @@ This will download the required dependencies
 
 To start working just run this on terminal:
 ```bash
-gulp
+npm run dev
 ```
 This will start watching the source files, applying transformations
 when they change and initialize a web server on `localhost:8080`.
@@ -35,9 +34,9 @@ any manual change will be lost.
 
 ## Releasing ##
 
-There's already a gulp task for this, just run:
+There's already a task for this, just run:
 ```bash
-gulp release
+npm run release
 ```
 
 ## Style Architecture ##
