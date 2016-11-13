@@ -3,7 +3,8 @@
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var sassLint = require('gulp-sass-lint');
-var rename = require("gulp-rename");
+var rename = require('gulp-rename');
+var prefixer = require('gulp-autoprefixer');
 
 const paths = require('../options/paths');
 const sassLintRules = require('../options/sass-lint-rules');
@@ -22,6 +23,9 @@ module.exports = (gulp) => {
             .pipe(sourcemaps.init())
             .pipe(sass()
                 .on('error', sass.logError))
+            .pipe(prefixer({
+              browsers: ['last 2 versions'],
+              cascade: true}))
             .pipe(rename('style.css'))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(paths.style.dist));
