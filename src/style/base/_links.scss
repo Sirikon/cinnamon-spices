@@ -1,8 +1,9 @@
 a {
+    transition: .1s ease-in-out;
+
     &:not(.cs-button) {
         color: $color-white;
         text-decoration: none;
-        transition: .1s ease-in-out;
 
         &:hover,
         &:active {
