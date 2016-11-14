@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var sassLint = require('gulp-sass-lint');
 var rename = require('gulp-rename');
 var prefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync');
 
 const paths = require('../options/paths');
 const sassLintRules = require('../options/sass-lint-rules');
@@ -25,16 +26,21 @@ module.exports = (gulp) => {
                 .on('error', sass.logError))
             .pipe(prefixer({
               browsers: ['last 2 versions'],
-              cascade: true}))
+              cascade: true }))
             .pipe(rename('style.css'))
             .pipe(sourcemaps.write('./'))
-            .pipe(gulp.dest(paths.style.dist));
+            .pipe(gulp.dest(paths.style.dist))
+            .pipe(browserSync.reload({
+                stream: true }));
     });
 
     gulp.task('style:release', () => {
         return gulp.src(paths.style.src)
             .pipe(sass({outputStyle: 'compressed'})
                 .on('error', sass.logError))
+            .pipe(prefixer({
+              browsers: ['last 2 versions'],
+              cascade: true }))
             .pipe(rename('style.css'))
             .pipe(gulp.dest(paths.style.dist));
     });
