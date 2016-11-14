@@ -1,0 +1,65 @@
+html {
+    &.cs-login-signup {
+        height: 100%;
+
+        body {
+            height: 100%;
+        }
+
+        .cs-main-wrap {
+            height: 100%;
+            padding: 0;
+        }
+
+        .cs-login-signup-content {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+
+            form {
+                background-color: $brand-color-dark;
+                border: solid 1px $color-silver;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px $color-silver;
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                width: 400px;
+
+                .cs-login-form-logo {
+                    margin-bottom: 20px;
+                }
+
+                label {
+                    color: $color-white;
+                }
+            }
+
+            .cs-login-form-row {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+
+                input {
+                    border: solid 1px $color-silver;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+
+            }
+
+            .cs-login-form-options {
+
+                margin: 10px 0;
+
+                a {
+                    color: $color-white;
+                    float: right;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
