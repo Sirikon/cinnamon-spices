@@ -1,11 +1,11 @@
 .cs-items-list-container {
-    margin: 20px 0 0;
+    margin: 1.25rem 0 0;
 }
 
 .cs-items-list-row {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 20px;
+    margin: 0 0 1.25rem;
 }
 
 .cs-items-list-image {
@@ -18,9 +18,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 245px;
+        height: 15.3125rem;
         opacity: .85;
-        width: 435px;
+        width: 27.1875rem;
     }
 
     &:hover {
@@ -39,23 +39,23 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        line-height: 32px;
-        padding: 10px;
+        line-height: 2rem;
+        padding: .625rem;
         text-decoration: none;
-        width: 275px;
+        width: 17.1875rem;
 
         & > img {
-            max-height: 48px;
-            max-width: 48px;
+            max-height: 3rem;
+            max-width: 3rem;
         }
 
         & > label {
             color: $item-title-color;
             cursor: pointer;
             flex-grow: 1;
-            font-size: 20px;
-            line-height: 32px;
-            margin-left: 10px;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin-left: .625rem;
             text-decoration: none;
             width: 100%;
         }
@@ -64,7 +64,7 @@ a {
 
 .cs-items-list-overlay {
     background-color: $color-black;
-    height: 30px;
+    height: 1.875rem;
     opacity: .5;
     position: absolute;
     width: 100%;
@@ -73,17 +73,17 @@ a {
 
 .cs-items-list-title {
     color: $color-white;
-    font-size: 14px;
-    left: 10px;
+    font-size: .875rem;
+    left: .625rem;
     position: absolute;
-    top: 15px;
+    top: .9375rem;
 }
 
 .cs-items-list-item {
     align-items: stretch;
     background-color: $color-white;
-    border: solid 1px $color-silver;
-    border-radius: 4px;
+    border: solid .0625rem $color-silver;
+    border-radius: .25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,31 +94,29 @@ a {
 .cs-items-list-info-bar {
     background-color: $color-almost-white;
     box-sizing: border-box;
-    font-size: 14px;
-    height: 55px;
-    padding: 10px;
+    font-size: .875rem;
+    height: 3.4375rem;
+    padding: .625rem;
 
     a {
-        height: 35px;
-        line-height: 35px;
         text-transform: none;
     }
 
     span {
         display: inline-block;
         float: right;
-        height: 35px;
-        line-height: 35px;
-        margin-left: 10px;
+        height: 2.1875rem;
+        line-height: 2.1875rem;
+        margin-left: .625rem;
 
         &.downloads-cnt {
-            background: url('resources/icons/download.png') no-repeat 0 10px;
-            padding-left: 20px;
+            background: url('resources/icons/download.png') no-repeat 0 .625rem;
+            padding-left: 1.25rem;
         }
 
         &.time-ago {
-            background: url('resources/icons/time-ago.png') no-repeat 0 12px;
-            padding-left: 20px;
+            background: url('resources/icons/time-ago.png') no-repeat 0 .75rem;
+            padding-left: 1.25rem;
         }
     }
 

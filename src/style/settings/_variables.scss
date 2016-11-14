@@ -1,7 +1,6 @@
 // GLOBAL Variabels
-$global-max-width: 1120px;
-$main-background-color: $color-off-white-1;
-$site-padding: 17px;
+$global-padding: 1.0625rem;
+$global-max-width: 70rem;
 
 // Button
 $button-bg-color: $primary-color;
@@ -10,15 +9,15 @@ $button-text-color: $color-white;
 
 // Header
 $header-color: $color-white;
-$header-padding-vertical: $site-padding;
-$header-height: 36px;
+$header-padding-vertical: $global-padding;
+$header-height: 2.25rem;
 $header-subtitle-color: $color-off-white-2;
-$header-link-separation-between: 28px;
+$header-link-separation-between: 1.75rem;
 $header-signup-horizontal-padding: $header-link-separation-between / 1.7;
 $header-link-active-color: $primary-color-dark;
 
 // Jumbotron
-$landing-jumbotron-height: 450px;
+$landing-jumbotron-height: 28.125rem;
 $intro-text-color: #d09f85;
 
 // Content Filter
@@ -40,6 +39,7 @@ $sidebar-gradient-d: #e7e7e7;
 $sidebar-gradient-e: #e1e1e1;
 
 // Main Wrap
+$main-background-color: $color-off-white-1;
 $main-color: $color-black;
 
 // Footer

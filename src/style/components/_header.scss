@@ -11,22 +11,22 @@
 .cs-header-logo {
     display: block;
     float: left;
-    padding-top: 5px;
+    padding-top: .3125rem;
 
 
 
     img {
         display: block;
-        width: 165px;
+        width: 10.3125rem;
     }
 
     div {
         color: $header-subtitle-color;
         display: block;
         font-family: $font-roboto;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 200;
-        margin-top: 1px;
+        margin-top: .0625rem;
         text-align: right;
     }
 }
@@ -38,7 +38,7 @@
     &-link,
     &-login {
         &.active {
-            border-bottom: 1px solid $header-link-active-color;
+            border-bottom: .0625rem solid $header-link-active-color;
         }
     }
 
@@ -47,8 +47,8 @@
     &-signup {
         color: $header-color;
         font-family: $font-roboto;
-        font-size: 14px;
-        padding: 6px $header-link-separation-between / 2;
+        font-size: .875rem;
+        padding: .375rem $header-link-separation-between / 2;
         text-decoration: none;
         text-transform: uppercase;
         vertical-align: middle;

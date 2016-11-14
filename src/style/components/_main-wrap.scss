@@ -1,8 +1,8 @@
 .cs-main-wrap {
     display: flex;
     margin: auto;
-    max-width: 1120px;
-    padding: 17px 0;
+    max-width: $global-max-width;
+    padding: $global-padding 0;
     width: 100%;
 }
 
