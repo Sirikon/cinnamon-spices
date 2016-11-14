@@ -8,14 +8,18 @@ $button-bg-color: $primary-color;
 $button-bg-hover: darken($primary-color, 5%);
 $button-text-color: $color-white;
 
-// Jumbotron
-$landing-jumbotron-height: 450px;
-$intro-text-color: #d09f85;
-
 // Header
 $header-color: $color-white;
 $header-padding-vertical: $site-padding;
 $header-height: 36px;
+$header-subtitle-color: $color-off-white-2;
+$header-link-separation-between: 28px;
+$header-signup-horizontal-padding: $header-link-separation-between / 1.7;
+$header-link-active-color: $primary-color-dark;
+
+// Jumbotron
+$landing-jumbotron-height: 450px;
+$intro-text-color: #d09f85;
 
 // Content Filter
 $filter-link-color: #161616;

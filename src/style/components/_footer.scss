@@ -62,3 +62,25 @@
         }
     }
 }
+
+.cs-footer-copyright {
+    color: $color-off-white-3;
+    font-size: .75rem;
+    justify-content: space-between;
+    padding: .5rem;
+
+    .cs-sponsor {
+        a {
+            display: inline-block;
+            float: right;
+            font-size: 1rem;
+            margin-left: .25rem;
+            margin-top: -.1675rem;
+
+            &:hover,
+            &:active {
+                color: $lm-brand-color;
+            }
+        }
+    }
+}

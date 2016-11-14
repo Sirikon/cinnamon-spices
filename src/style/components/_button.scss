@@ -12,7 +12,9 @@
     text-transform: uppercase;
     transition-property: background-color;
 
-    &:hover {
+    &:hover,
+    &:active {
         background-color: $button-bg-hover;
+        color: $button-text-color;
     }
 }

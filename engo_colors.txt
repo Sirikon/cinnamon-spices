@@ -1,0 +1,57 @@
+spices - roboto light 18pt #fff
+Hero title - Roboto black 50pt #dc6830
+
+hero text - open sans bold 14pt #d09f85
+
+hero button - roboto medium 14pt #fff
+sign up button - roboto medium 14pt #fff
+main nav - roboto medium 14pt #fffhome sections main titles - open sans light 36pt #dc6830
+
+home section main text - open sans regular 16pt #6d7986
+home sections columns titles - open sans semibold 22pt #dc6830
+
+home sections columns text - open sans regular 16pt #6d7986
+home downloads "published" text - roboto regular 14pt #000 #6d7986
+#dc6830
+home fact section - merriweather bold 32pt #ffffooter downloads globe - octicons 95pt #dc6830
+
+footer downloads count - open sans regular 62pt #fff
+footer downloads text - open sans regular 20pt #dc6830
+footer nav - roboto regular 12pt #ffffooter credits - roboto regular 11pt #6d7986
+-----------------
+themes pagehero text highlight - #f4d7c8
+content nav - roboto regular 14pt #151515
+#dc6830
+
+content nav - octicon 18pt #646464
+side nav title - roboto regular 12pt #858585
+
+side nav item - roboto medium 13pt #151515
+
+side nav item icon - octicons 16pt #c3c3c3
+ (optional: gradient on hovered items #333333
+- #a6a6a6
+else just #333333
+)item credit - roboto regular 12pt #d1d1d1
+
+item download - roboto regular 12pt #fffitem info text - roboto regular 14pt #999999
+
+item info icons - roboto regular 18pt #999999
+
+item star - roboto regular 18pt #a4a4a4
+
+item count - roboto medium 15pt #000-----------------
+inner pageitem title - open sans bold 36pt #000
+small texts - open sans regular 13pt #6d7986
+
+item download - roboto regular 12pt #fff
+item website - roboto regular 12pt #000---user generated---
+item text - open sans regular 16pt #6d7986
+
+item text bold - open sans bold 16pt #000
+item text titles - open sans bold 22pt #000
+---user generated---comments name - open sans semibold 16pt #dc6830
+
+comments time - open sans regular 16pt #b2bec4
+
+comments text - open sans regular 16pt #6d7986 
