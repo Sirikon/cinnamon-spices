@@ -1,4 +1,13 @@
 a {
-    text-decoration: none;
     transition: .1s ease-in-out;
+
+    &:not(.cs-button) {
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            color: $primary-color-dark;
+        }
+    }
 }
