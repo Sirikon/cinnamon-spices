@@ -1,3 +1,9 @@
+# Node files
 node_modules/
+npm_debug.log
+
+# Distribution Files
 dist/
+
+# Mac files
 .DS_Store

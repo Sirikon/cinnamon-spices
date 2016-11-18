@@ -11,22 +11,22 @@
 .cs-header-logo {
     display: block;
     float: left;
-    padding-top: 5px;
+    padding-top: .3125rem;
 
-    $subtitle-color: $color-off-white-2;
+
 
     img {
         display: block;
-        width: 165px;
+        width: 10.3125rem;
     }
 
     div {
-        color: $subtitle-color;
+        color: $header-subtitle-color;
         display: block;
         font-family: $font-roboto;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 200;
-        margin-top: 1px;
+        margin-top: .0625rem;
         text-align: right;
     }
 }
@@ -35,20 +35,10 @@
     float: right;
     text-align: right;
 
-    $link-separation-between: 28px;
-    $signup-horizontal-padding: $link-separation-between / 1.7;
-
-    $link-hover-color: $primary-color-dark;
-    $link-active-color: $primary-color-dark;
-
     &-link,
     &-login {
-        &:hover {
-            color: $link-hover-color;
-        }
-
         &.active {
-            border-bottom: 1px solid $link-active-color;
+            border-bottom: .0625rem solid $header-link-active-color;
         }
     }
 
@@ -57,21 +47,21 @@
     &-signup {
         color: $header-color;
         font-family: $font-roboto;
-        font-size: 14px;
-        padding: 6px $link-separation-between / 2;
+        font-size: .875rem;
+        padding: .375rem $header-link-separation-between / 2;
         text-decoration: none;
         text-transform: uppercase;
         vertical-align: middle;
     }
 
     &-login {
-        padding-left: $link-separation-between / 1.2;
-        padding-right: $signup-horizontal-padding;
+        padding-left: $header-link-separation-between / 1.2;
+        padding-right: $header-signup-horizontal-padding;
     }
 
     &-signup {
         height: $header-height;
         line-height: $header-height;
-        padding: 0 $signup-horizontal-padding;
+        padding: 0 $header-signup-horizontal-padding;
     }
 }

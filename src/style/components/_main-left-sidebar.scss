@@ -1,22 +1,22 @@
 .cs-main-left-sidebar {
     flex-grow: 0;
-    width: 200px;
+    width: 12.5rem;
 
     .title {
         color: $sidebar-title-color;
     }
 
     ul {
-        border: solid 1px $color-silver;
-        border-radius: 2px;
+        border: solid .0625rem $color-silver;
+        border-radius: .125rem;
         list-style: none;
         padding: 0;
-        width: 170px;
+        width: 10.625rem;
 
         li {
             background: linear-gradient(to bottom, $sidebar-gradient-a 0%, $sidebar-gradient-b 100%);
-            border-bottom: solid 1px $color-silver;
-            padding: 5px 20px;
+            border-bottom: solid .0625rem $color-silver;
+            padding: .3125rem 1.25rem;
 
             &:hover {
                 background: linear-gradient(to bottom, $sidebar-gradient-b 0%, $sidebar-gradient-c 100%);
@@ -33,8 +33,8 @@
             a {
                 color: $sidebar-link-color;
                 display: block;
-                font-size: 14px;
-                line-height: 38px;
+                font-size: .875rem;
+                line-height: 2.37rem;
                 text-decoration: none;
 
                 &:hover {
