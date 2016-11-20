@@ -1,3 +1,6 @@
+// The linter makes me cry when it comes to this one.
+// -darryn
+
 a {
     transition: .1s ease-in-out;
 
@@ -8,6 +11,14 @@ a {
         &:hover,
         &:active {
             color: $primary-color-dark;
+        }
+
+        &.cs-link-alternate {
+            color: $primary-color-dark;
+
+            &:hover {
+                color: $primary-color-light;
+            }
         }
     }
 }
