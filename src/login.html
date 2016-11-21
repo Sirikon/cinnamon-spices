@@ -7,35 +7,36 @@
 </head>
 <body>
 
-<div class="cs-login-wrap">
-    <div class="cs-login-signup-header">
-        <div class="cs-login-signup-header-logo"><img src="/resources/cinnamon-logo.svg"></div>
-        <div class="cs-login-signup-header-text">Sign in to CINNAMON</div>
-    </div>
-    <form>
-        <div class="cs-login-form-row">
-            <label for="cs-login-form-username">Username</label>
-            <input type="text" id="cs-login-form-username">
-        </div>
-        <div class="cs-login-form-row">
-            <div class="cs-login-form-forgot-password-link">
-                <label for="cs-login-form-password">Password</label>
-                <a class="cs-login-form-forgot-password" href="forgot-password.html">Forgot password?</a>
-            </div>
-            <input type="password" id="cs-login-form-password">
-        </div>
-        <div class="cs-login-form-options">
-            <input type="checkbox" id="cs-login-form-remember-me">
-            <label for="cs-login-form-remember-me">Remember me</label>
-        </div>
-        <div class="cs-login-form-row">
-            <button class="cs-button" type="submit">Login</button>
-        </div>
-    </form>
-    <div class="cs-login-signup-new-to-cinnamon">
-        New to CINNAMON?
-        <a href="signup.html">Create an account</a>
-    </div>
+<div class="cs-login-signup-header cs-flex-column">
+    <div class="cs-login-signup-header-logo"><img src="/resources/cinnamon-logo.svg"></div>
+    <div class="cs-login-signup-header-text">Sign in to <a href="/">CINNAMON</a></div>
 </div>
+
+<form class="cs-login-signup cs-login-signup-form cs-flex-column">
+    <div class="cs-login-form-row cs-flex-column">
+        <label for="cs-login-form-username">Username</label>
+        <input type="text" id="cs-login-form-username">
+    </div>
+    <div class="cs-login-form-row cs-flex-column">
+        <div class="cs-login-form-forgot-password">
+            <label for="cs-login-form-password">Password</label>
+            <a class="cs-link-alternate" href="forgot-password.html">Forgot password?</a>
+        </div>
+        <input type="password" id="cs-login-form-password">
+    </div>
+    <div class="cs-login-form-row cs-login-form-row-tall">
+        <input type="checkbox" id="cs-login-form-remember-me">
+        <label for="cs-login-form-remember-me">Remember me</label>
+    </div>
+    <div class="cs-login-form-row cs-flex-column">
+        <button class="cs-button" type="submit">Login</button>
+    </div>
+</form>
+
+<div class="cs-login-signup cs-login-signup-call">
+    New to CINNAMON?
+    <a class="cs-link-alternate" href="signup.html">Create an account</a>
+</div>
+
 </body>
 </html>
