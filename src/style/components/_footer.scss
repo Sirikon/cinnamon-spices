@@ -1,5 +1,6 @@
 .cs-footer {
     background-color: $footer-bg-color;
+    margin-top: $global-padding * 3;
 }
 
 .cs-footer-fact {
@@ -18,8 +19,15 @@
 
 }
 
-.cs-footer-downloads {
+.cs-footer-downloads,
+.cs-footer-navigation {
     background-color: $color-light-black;
+}
+
+.cs-footer-navigation {
+    .cs-main-wrap {
+        justify-content: space-between;
+    }
 }
 
 .cs-footer-download-card {
@@ -48,6 +56,11 @@
 
 .cs-footer-sub-navigation {
     font-size: .75rem;
+
+    .active {
+        color: $primary-color;
+        cursor: default;
+    }
 
     a {
         color: $color-white;
