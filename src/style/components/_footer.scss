@@ -7,9 +7,10 @@
     padding: $header-padding-vertical * 2;
     text-align: center;
 
-    h2 {
+    h4 {
         color: $color-white;
         font-family: $font-merriweather;
+        font-size: 1.65rem;
         letter-spacing: .046875rem;
         margin: 0 auto;
         padding: 0;
@@ -39,7 +40,7 @@
     margin: $global-padding 0;
     text-align: center;
 
-    h3 {
+    h4 {
         color: $color-white;
         font-weight: 100;
         margin: 0 0 ($global-padding / 2);
