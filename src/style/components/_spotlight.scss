@@ -1,39 +1,36 @@
 .cs-spotlight {
     background-color: $spotlight-background-color;
-    padding: 2.125rem 0 4.25rem;
+    padding: ($global-padding * 2) 0 ($global-padding * 4);
 }
 
-.cs-spotlight-header {
+.cs-spotlight-header,
+.cs-addons-header {
     color: $spotlight-header-color;
     font-size: 2.25rem;
-    margin: 2.125rem auto;
     text-align: center;
+}
+
+.cs-spotlight-header{
+    margin: 2.125rem auto;
 }
 
 .cs-spotlight-item {
     flex: 1;
-    padding: 0 .25rem;
-}
-
-.cs-spotlight-item-image {
-    margin-top: .375rem;
+    margin: 0 ($global-padding / 2);
 }
 
 .cs-spotlight-item-header {
-    color: $spotlight-item-header-color;
-    font-size: 1.35rem;
-    font-weight: 600;
     margin: 0;
 }
 
 .cs-spotlight-item-description {
     color: $spotlight-item-description-color;
-    margin: .375rem 0;
+    margin: .375rem 0 .125rem;
 }
 
 .cs-spotlight-item-publish {
     color: $spotlight-item-publish-color;
-    font-size: .875rem;
+    font-size: .8125rem;
     margin: 0;
 
     span {
