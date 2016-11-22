@@ -1,0 +1,43 @@
+.cs-spotlight {
+    background-color: $spotlight-background-color;
+    padding: 2.125rem 0 4.25rem;
+}
+
+.cs-spotlight-header {
+    color: $spotlight-header-color;
+    font-size: 2.25rem;
+    margin: 2.125rem auto;
+    text-align: center;
+}
+
+.cs-spotlight-item {
+    flex: 1;
+    padding: 0 .25rem;
+}
+
+.cs-spotlight-item-image {
+    margin-top: .375rem;
+}
+
+.cs-spotlight-item-header {
+    color: $spotlight-item-header-color;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cs-spotlight-item-description {
+    color: $spotlight-item-description-color;
+    margin: .375rem 0;
+}
+
+.cs-spotlight-item-publish {
+    color: $spotlight-item-publish-color;
+    font-size: .875rem;
+    margin: 0;
+
+    span {
+        color: $color-light-black;
+        font-weight: 600;
+    }
+}
