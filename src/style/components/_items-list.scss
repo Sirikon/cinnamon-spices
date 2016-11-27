@@ -36,8 +36,6 @@
 
 a {
     &.cs-items-list-details {
-        display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
         line-height: 2rem;
         padding: .625rem;
@@ -54,7 +52,6 @@ a {
             cursor: pointer;
             flex-grow: 1;
             font-size: 1.25rem;
-            line-height: 2rem;
             margin-left: .625rem;
             text-decoration: none;
             width: 100%;
@@ -84,8 +81,6 @@ a {
     background-color: $color-white;
     border: solid .0625rem $color-silver;
     border-radius: .25rem;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
     width: auto;

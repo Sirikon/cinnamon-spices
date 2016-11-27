@@ -1,8 +1,6 @@
 .cs-landing-jumbotron {
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
-    display: flex;
-    flex-direction: column;
 }
 
 .cs-jumbotron-content {
@@ -13,8 +11,6 @@
     background-repeat: no-repeat;
 
     color: $color-white;
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
     height: 23.75rem;
     justify-content: center;

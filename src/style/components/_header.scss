@@ -1,6 +1,5 @@
 .cs-header {
     color: $header-color;
-    display: block;
     height: $header-height;
     margin: auto;
     max-width: $global-max-width;
@@ -22,7 +21,6 @@
 
     div {
         color: $header-subtitle-color;
-        display: block;
         font-family: $font-roboto;
         font-size: 1.125rem;
         font-weight: 200;

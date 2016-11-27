@@ -1,7 +1,12 @@
-// This can be refined to affect all headings seperately
+// .cs-heading-large really only applies to h2 -> h6
+.cs-heading-large {
+    font-size: 3em;
+}
 
-h3 {
-    &.cs-heading-large {
-        font-size: 3em;
-    }
+.cs-header-normal {
+    font-weight: normal;
+}
+
+.cs-header-thin {
+    font-weight: 300;
 }
