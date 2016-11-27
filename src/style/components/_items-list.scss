@@ -98,21 +98,17 @@ a {
     }
 
     span {
-        display: inline-block;
+        align-items: center;
+        display: inline-flex;
         float: right;
         height: 2.1875rem;
         line-height: 2.1875rem;
         margin-left: .625rem;
 
-        &.downloads-cnt {
-            background: url('resources/icons/download.png') no-repeat 0 .625rem;
-            padding-left: 1.25rem;
-        }
-
-        &.time-ago {
-            background: url('resources/icons/time-ago.png') no-repeat 0 .75rem;
-            padding-left: 1.25rem;
+        &>img {
+            height: 1rem;
+            margin-right: .5rem;
+            width: 1rem;
         }
     }
-
 }
