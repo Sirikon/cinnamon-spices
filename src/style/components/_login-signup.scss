@@ -30,7 +30,7 @@
         }
     }
 
-    form {
+    form, .cs-login-form-box {
         background-color: $color-white;
         border: solid .0625rem $color-silver;
         border-radius: .3rem;
@@ -72,6 +72,11 @@
             a {
                 float: right;
             }
+        }
+
+        p {
+            color: $color-error;
+            margin: .5rem 0;
         }
     }
 
