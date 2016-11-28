@@ -52,6 +52,11 @@
         padding: .5rem;
     }
 
+    p {
+        color: $color-error;
+        margin: .5rem 0 0;
+    }
+
     &:first-of-type {
         margin-top: 0;
     }
