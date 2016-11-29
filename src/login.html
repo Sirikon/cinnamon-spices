@@ -7,7 +7,13 @@
 <body class="cs-flex-column">
 
 <div class="cs-login-signup-header cs-flex-column">
-    <div class="cs-login-signup-header-logo"><img src="/resources/cinnamon-logo.svg"></div>
+    <div class="cs-login-signup-header-logo">
+        <a href="/">
+            <svg>
+                <use xlink:href="resources/icons/sprite.svg#cinnamon">
+            <svg>
+        </a>
+    </div>
     <div class="cs-login-signup-header-text">Sign in to <a href="/">CINNAMON</a></div>
 </div>
 
@@ -21,7 +27,7 @@
         <div class="cs-login-form-row cs-flex-column">
             <div class="cs-login-form-forgot-password">
                 <label for="cs-login-form-password">Password</label>
-                <a class="cs-link-alternate" href="forgot-password.html">Forgot password?</a>
+                <a href="forgot-password.html">Forgot password?</a>
             </div>
             <input type="password" id="cs-login-form-password">
         </div>
@@ -36,7 +42,7 @@
 
     <div class="cs-login-signup cs-login-signup-call">
         New to CINNAMON?
-        <a class="cs-link-alternate" href="signup.html">Create an account</a>
+        <a href="signup.html">Create an account</a>
     </div>
 </div>
 
@@ -65,7 +71,7 @@
         </div>
         <div class="cs-sponsor">
             Brought to you by
-            <a href="//www.linuxmint.com">LINUX MINT</a>
+            <a class="cs-link-alternate" href="//www.linuxmint.com">LINUX MINT</a>
         </div>
     </div>
 </div>

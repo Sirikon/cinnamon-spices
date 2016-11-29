@@ -51,6 +51,10 @@
         font-size: 1rem;
         font-weight: normal;
     }
+
+    svg {
+        fill: $primary-color;
+    }
 }
 
 .cs-footer-sub-navigation {
@@ -62,12 +66,8 @@
     }
 
     a {
-        color: $color-white;
+        color: $links-alt-color;
         font-weight: bold;
-
-        &:hover {
-            color: $primary-color-dark;
-        }
     }
 
     li {

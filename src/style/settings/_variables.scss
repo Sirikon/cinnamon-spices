@@ -7,6 +7,12 @@ $button-bg-color: $primary-color;
 $button-bg-hover: darken($primary-color, 5%);
 $button-text-color: $color-white;
 
+// Links
+$links-main-color: $primary-color;
+$links-main-hover: $primary-color-darker;
+$links-alt-color: $color-white;
+$links-alt-hover: $primary-color;
+
 // Header
 $header-color: $color-white;
 $header-padding-vertical: $global-padding;
@@ -45,6 +51,7 @@ $main-color: $color-black;
 // Addons
 $addons-icon-fill: $color-white;
 $addons-item-content-color: $color-silver-2;
+$addons-item-icon-background: $primary-color;
 
 // Spotlight
 $spotlight-background-color: $color-yellow;

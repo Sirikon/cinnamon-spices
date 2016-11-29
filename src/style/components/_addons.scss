@@ -8,8 +8,8 @@
 
 .cs-addons-sub-header {
     font-size: 1.125rem;
-    text-align: center;
     margin: 0 0 ($global-padding * 2);
+    text-align: center;
 }
 
 .cs-addons-item {
@@ -17,43 +17,27 @@
     margin: 0 $global-padding;
     text-align: center;
 
-//----
-// This Block of Code is ONLY FOR a visual TEST
-// DO NOT KEEP THIS
-//----
-//---- Block Start
-    &:nth-child(odd) {
+    &:hover {
+        a {
+            color: $primary-color-darker;
+        }
+
         .cs-addons-item-icon {
-            &:hover {
-                background-color: $main-background-color;
-                svg {
-                    path {
-                        fill: $primary-color;
-                    }
-                }
-            }
+            background: $primary-color-darker;
         }
     }
-//---- Block End
 }
 
 .cs-addons-item-icon {
-    background: #dc6830;
+    background: $addons-item-icon-background;
     border-radius: 4rem;
     height: 8rem;
     transition: background .1s ease-in-out;
     width: 8rem;
 
-    &:hover {
-        background-color: $button-bg-hover;
-
-    }
-
     svg {
-        path {
-            transition: fill .1s ease-in-out;
-            fill: #fff;
-        }
+        fill: $color-white;
+        max-width: 40%;
     }
 }
 
