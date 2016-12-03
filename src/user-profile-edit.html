@@ -50,28 +50,41 @@
         <h1>Edit your profile</h1>
 
         <form action="" class="cs-flex">
-            <div>
+            <div style="margin-right: 2rem">
                 <img src="http://cinnamon-spices.my/uploads/avatars/11093.jpg" style="float: left">
             </div>
-            <div class="cs-flex cs-flex-grow">
-                <table width="100%">
-                    <tbody><tr><th>Avatar</th><td><input type="file" name="avatar" size="20"> (.jpg, 100x100px, 100KB max) </td></tr>
+            <div class="cs-flex-grow">
+                <div class="cs-form-row cs-flex-column">
+                    <label>Avatar</label>
+                    <input type="file" name="avatar" size="20">
+                    <em>(.jpg, 100x100px, 100KB max)</em>
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <label>Signature</label>
+                    <input type="text" name="signature" value="aaa">
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <label>Signature</label>
+                    <input type="text" name="signature" value="aaa">
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <label>Biography</label>
+                    <textarea name="biography" rows="5" cols="50">zzz</textarea>
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <label>Country</label>
+                    <select name="country"><option value="0">None</option>
+                    </select>
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <label>Distribution</label>
+                    <select name="distribution"><option value="0">None</option>
+                    </select>
+                </div>
+                <div class="cs-form-row cs-flex-column">
+                    <button class="cs-button">Submit</button>
+                </div>
 
-                    <tr><th>Signature</th><td><input type="text" name="signature" value="aaa"></td></tr>
-
-                    <tr><th>Biography</th><td><textarea name="biography" rows="10" cols="50">zzz</textarea></td></tr>
-
-                    <tr><th>Country</th><td><select name="country"><option value="0">None</option>
-                    </select></td></tr>
-
-                    <tr><th>Distribution</th><td><select name="distribution"><option value="0">None</option>
-                    </select></td></tr>
-
-                    <tr><td colspan="2" align="center">
-                        <input type="submit" name="submit" value="Save">
-                    </td></tr>
-                    </tbody>
-                </table>
             </div>
         </form>
 
