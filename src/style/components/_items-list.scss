@@ -90,7 +90,6 @@ a {
     background-color: $color-almost-white;
     box-sizing: border-box;
     font-size: .875rem;
-    height: 3.4375rem;
     padding: .625rem;
 
     a {
@@ -98,17 +97,16 @@ a {
     }
 
     span {
-        align-items: center;
-        display: inline-flex;
+        display: flex;
         float: right;
         height: 2.1875rem;
         line-height: 2.1875rem;
-        margin-left: .625rem;
+        margin-left: 1rem;
 
-        &>img {
-            height: 1rem;
-            margin-right: .5rem;
-            width: 1rem;
+        &>svg {
+            fill: $color-off-white-3;
+            margin-right: .25rem;
+            width: 1.25rem;
         }
     }
 }

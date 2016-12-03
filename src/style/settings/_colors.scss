@@ -1,6 +1,7 @@
 // Primary Colors
 $primary-color: #dc6830;
 $primary-color-dark: #dc682f;
+$primary-color-darker: darken($primary-color, 7.5%);
 $primary-color-light: lighten($primary-color, 3%);
 
 // Brand Colors

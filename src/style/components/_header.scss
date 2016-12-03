@@ -33,6 +33,10 @@
     float: right;
     text-align: right;
 
+    a {
+        color: $links-alt-color;
+    }
+
     &-link,
     &-login {
         &.active {

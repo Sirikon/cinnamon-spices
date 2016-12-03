@@ -12,6 +12,16 @@
             height: 3.625rem;
             width: 3.625rem;
         }
+
+        svg {
+            fill: $links-main-color;
+            height: 3.625rem;
+            width: 3.625rem;
+
+            &:hover {
+                fill: $links-main-hover;
+            }
+        }
     }
 
     .cs-login-signup-header-text {

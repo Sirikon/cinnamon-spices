@@ -5,20 +5,20 @@ a {
     transition: .1s ease-in-out;
 
     &:not(.cs-button) {
-        color: $color-white;
+        color: $links-main-color;
         text-decoration: none;
 
         &:hover,
         &:active {
-            color: $primary-color-dark;
+            color: $links-main-hover;
         }
 
         &.cs-link-alternate {
-            color: $primary-color-dark;
+            color: $links-alt-color;
 
             &:hover,
             &:active {
-                color: darken($primary-color, 7.5%);
+                color: $links-alt-hover;
             }
         }
     }
