@@ -1,38 +1,30 @@
-.cs-landing-jumbotron {
+.cs-jumbotron {
     @include linear-gradient-top-bottom($brand-color-darker, $brand-color-dark);
     background-color: $brand-color-darker;
 }
 
 .cs-jumbotron-content {
-    align-items: center;
-
-    background-image: url('/resources/bg/jumbotron-mountain.png');
-    background-position: 37.5rem .0625rem;
-    background-repeat: no-repeat;
-
+    align-items: left;
+    background: url('/resources/bg/jumbotron-mountain.png') 42rem bottom no-repeat;
     color: $color-white;
     flex-grow: 1;
-    height: 23.75rem;
     justify-content: center;
     margin: auto;
     max-width: $global-max-width;
+    min-height: 26.5rem;
+    padding-bottom: 2rem;
     width: 100%;
-
-
-    > div {
-        width: 100%;
-    }
-
-    h1 {
-        font-family: $font-roboto;
-        font-size: 3.125rem;
-        margin-bottom: 1.25rem;
-        margin-top: 0;
-    }
 
     p {
         color: $intro-text-color;
+        font-size: .875rem;
         font-weight: bold;
-        width: 32.5rem;
+        line-height: 1.5;
+        margin: 1rem 0 1.5rem;
+        max-width: 32.5rem;
     }
+}
+
+.cs-jumbotron-highlight {
+    color: lighten($intro-text-color, 25%);
 }
