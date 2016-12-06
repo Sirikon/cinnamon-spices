@@ -18,6 +18,14 @@
     margin: 0 $global-padding;
     text-align: center;
 
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
     &:hover {
         a {
             color: $primary-color-darker;
