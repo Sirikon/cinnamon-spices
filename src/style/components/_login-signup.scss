@@ -62,9 +62,11 @@
         padding: .5rem;
         transition: .15s ease-in-out;
 
-        &:not([type='checkbox']):focus {
-            border-color: $primary-color;
-            box-shadow: 0 0 .375rem -.0625rem $primary-color;
+        &:not([type='checkbox']) {
+            &:focus {
+                border-color: $primary-color;
+                box-shadow: 0 0 .375rem -.0625rem $primary-color;
+            }
         }
     }
 

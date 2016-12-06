@@ -1,11 +1,13 @@
 .cs-header-logo-inline {
+    display: flex;
+
     img {
         display: inline-block;
     }
 
     div {
-        display: inline-block;
-        height: 1.54375rem;
-        margin: 0;
+        font-size: 1.25rem;
+        margin-left: .5rem;
+        padding: 0;
     }
 }
