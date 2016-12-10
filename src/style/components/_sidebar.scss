@@ -1,15 +1,15 @@
-.cs-main-left-sidebar {
+.cs-sidebar {
     flex: 0 0 12.5rem;
 
     .title {
         color: $sidebar-title-color;
     }
 
-//
-// This chunk of code probably needs to be
-// refactored in the future. It is very
-// very specific.
-//
+    //
+    // This chunk of code probably needs to be
+    // refactored in the future. It is very
+    // very specific.
+    //
     ul {
         border: solid .0625rem $color-silver;
         border-radius: .125rem;
