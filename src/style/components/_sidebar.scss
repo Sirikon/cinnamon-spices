@@ -4,46 +4,41 @@
     .title {
         color: $sidebar-title-color;
     }
+}
 
-    //
-    // This chunk of code probably needs to be
-    // refactored in the future. It is very
-    // very specific.
-    //
-    ul {
-        border: solid .0625rem $color-silver;
-        border-radius: .125rem;
-        list-style: none;
-        padding: 0;
-        width: 10.625rem;
+.cs-sidebar-links {
+    border: solid .0625rem $color-silver;
+    border-radius: .125rem;
+    list-style: none;
+    padding: 0;
+    width: 10.625rem;
 
-        li {
-            background: linear-gradient(to bottom, $sidebar-gradient-a 0%, $sidebar-gradient-b 100%);
-            border-bottom: solid .0625rem $color-silver;
-            padding: .3125rem 1.25rem;
+    li {
+        background: linear-gradient(to bottom, $sidebar-gradient-a 0%, $sidebar-gradient-b 100%);
+        border-bottom: solid .0625rem $color-silver;
+        padding: .3125rem 1.25rem;
+
+        &:hover {
+            background: linear-gradient(to bottom, $sidebar-gradient-b 0%, $sidebar-gradient-c 100%);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &.active {
+            background: linear-gradient(to bottom, $sidebar-gradient-d 0%, $sidebar-gradient-e 100%);
+        }
+
+        a {
+            color: $sidebar-link-color;
+            display: block;
+            font-size: .875rem;
+            line-height: 2.37rem;
+            text-decoration: none;
 
             &:hover {
-                background: linear-gradient(to bottom, $sidebar-gradient-b 0%, $sidebar-gradient-c 100%);
-            }
-
-            &:last-child {
-                border-bottom: 0;
-            }
-
-            &.active {
-                background: linear-gradient(to bottom, $sidebar-gradient-d 0%, $sidebar-gradient-e 100%);
-            }
-
-            a {
-                color: $sidebar-link-color;
-                display: block;
-                font-size: .875rem;
-                line-height: 2.37rem;
-                text-decoration: none;
-
-                &:hover {
-                    color: $sidebar-link-hover-color;
-                }
+                color: $sidebar-link-hover-color;
             }
         }
     }

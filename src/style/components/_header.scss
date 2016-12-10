@@ -1,6 +1,7 @@
 .cs-header {
     color: $header-color;
     height: $header-height;
+    justify-content: space-between;
     margin: auto;
     max-width: $global-max-width;
     padding: $header-padding-vertical 0;
@@ -8,8 +9,6 @@
 }
 
 .cs-header-logo {
-    display: block;
-    float: left;
     padding-top: .3125rem;
 
     img {
@@ -28,7 +27,6 @@
 }
 
 .cs-header-menu {
-    float: right;
     text-align: right;
 
     a {

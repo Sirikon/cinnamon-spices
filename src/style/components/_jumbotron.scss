@@ -4,7 +4,7 @@
 }
 
 .cs-jumbotron-content {
-    align-items: left;
+    align-items: flex-start;
     background: url('/resources/bg/jumbotron-mountain.png') 42rem bottom no-repeat;
     color: $color-white;
     flex-grow: 1;
