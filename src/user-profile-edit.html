@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cs-flex-column">
 
 <div class="cs-jumbotron cs-jumbotron-small cs-flex-column">
     <div class="cs-header">
@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<div class="cs-main-wrap cs-profile-wrap cs-flex-column">
+<div class="cs-main-wrap cs-profile cs-flex-column cs-flex-grow">
     <div class="cs-breadcrumbs">
         <ul class="cs-inline-list">
             <li><a href="/index.html">Home</a></li>
@@ -35,23 +35,19 @@
 
     <h1>Edit your profile</h1>
 
-    <form action="" class="cs-flex-column">
-        <div class="cs-profile-avatar" style="background-image: url('/resources/default_avatar.jpg')">
+    <div class="cs-profile-form cs-flex-row">
+        <div class="cs-main-left-sidebar">
+            <figure class="cs-profile-avatar" style="background-image: url('/resources/default_avatar.jpg')"></figure>
+            <h2 class="cs-profile-username">
+                Clem
+            </h2>
         </div>
-        <div class="cs-flex-grow">
+
+        <form action="" class="cs-main-content cs-flex-grow">
             <div class="cs-form-row cs-flex-column">
                 <label>Avatar</label>
                 <input type="file" name="avatar" size="20">
                 <em>(.jpg, 100x100px, 100KB max)</em>
-            </div>
-            <div class="cs-form-row cs-flex-column">
-                <label>Biography</label>
-                <textarea name="biography" rows="5" cols="50">zzz</textarea>
-            </div>
-            <div class="cs-form-row cs-flex-column">
-                <label>Country</label>
-                <select name="country"><option value="0">None</option>
-                </select>
             </div>
             <div class="cs-form-row cs-flex-column">
                 <label>Distribution</label>
@@ -59,14 +55,23 @@
                 </select>
             </div>
             <div class="cs-form-row cs-flex-column">
+                <label>Country</label>
+                <select name="country"><option value="0">None</option>
+                </select>
+            </div>
+            <div class="cs-form-row cs-flex-column">
                 <label>Signature</label>
                 <input type="text" name="signature" value="aaa">
             </div>
             <div class="cs-form-row cs-flex-column">
+                <label>Biography</label>
+                <textarea name="biography" rows="5" cols="50">zzz</textarea>
+            </div>
+            <div class="cs-form-row cs-flex-column">
                 <button class="cs-button">Submit</button>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 
 <div class="cs-footer">

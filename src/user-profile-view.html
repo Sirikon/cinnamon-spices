@@ -5,73 +5,84 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cs-flex-column">
 
-<div class="cs-flex-column">
-    <div class="cs-jumbotron cs-jumbotron-small cs-flex-column">
-        <div class="cs-header">
-            <div class="cs-header-logo cs-header-logo-inline">
-                <img src="./resources/cinnamon.svg" alt="">
-                <div>spices</div>
-            </div>
-            <div class="cs-header-menu">
-                <a class="cs-header-menu-link" href="index.html">Home</a>
-                <a class="cs-header-menu-link" href="themes.html">Themes</a>
-                <a class="cs-header-menu-link" href="applets.html">Applets</a>
-                <a class="cs-header-menu-link" href="desklets.html">Desklets</a>
-                <a class="cs-header-menu-link" href="extensions.html">Extensions</a>
-                <a class="cs-header-menu-link cs-header-menu-login" href="login.html">Log In</a>
-                <a class="cs-header-menu-signup cs-button cs-button-thin-text" href="signup.html">Sign Up</a>
-            </div>
+<div class="cs-jumbotron cs-jumbotron-small cs-flex-column">
+    <div class="cs-header">
+        <div class="cs-header-logo cs-header-logo-inline">
+            <img src="./resources/cinnamon.svg" alt="">
+            <div>spices</div>
+        </div>
+        <div class="cs-header-menu">
+            <a class="cs-header-menu-link" href="index.html">Home</a>
+            <a class="cs-header-menu-link" href="themes.html">Themes</a>
+            <a class="cs-header-menu-link" href="applets.html">Applets</a>
+            <a class="cs-header-menu-link" href="desklets.html">Desklets</a>
+            <a class="cs-header-menu-link" href="extensions.html">Extensions</a>
+            <a class="cs-header-menu-link cs-header-menu-login" href="login.html">Log In</a>
+            <a class="cs-header-menu-signup cs-button cs-button-thin-text" href="signup.html">Sign Up</a>
         </div>
     </div>
+</div>
 
-    <div class="cs-main-wrap cs-profile-wrap cs-flex-column">
+<div class="cs-main-wrap cs-profile cs-flex-column cs-flex-grow">
+    <div class="cs-breadcrumbs">
+        <ul class="cs-inline-list">
+            <li><a href="/index.html">Home</a></li>
+            <li>My Profile</li>
+        </ul>
+    </div>
+
+    <h1 class="page-title">nick</h1>
+
+    <div class="cs-profile-view cs-flex-row">
+        <div class="cs-main-left-sidebar">
+            <figure class="cs-profile-avatar" style="background-image: url('/resources/default_avatar.jpg')"></figure>
+            <ul>
+                <li> <h4>Last login:</h4> 2016-12-03 23:49:50 </li>
+                <li> <h4>Distribution:</h4> Linux Mint 18.1 </li>
+                <li> <h4>Country:</h4> Space </li>
+            </ul>
+        </div>
         <div class="cs-main-content">
-            <div class="cs-breadcrumbs">
-                <ul class="cs-inline-list">
-                    <li><a href="/index.html">Home</a></li>
-                    <li>My Profile</li>
-                </ul>
+            <div style="border: solid 0.0625rem #c0c0c0; border-radius: .25rem; padding: 1rem; background: #fff;">
+                <h4>Signature:</h4>
+                 <i>You cannot hide forever, Luke. I will not fight you. Give yourself to the dark side.</i>
             </div>
-
-            <h1 class="page-title">nick</h1>
-            <img src="/resources/default_avatar.jpg"><br>
-            Last login: 2016-12-03 23:49:50<br>
-            Signature: <i><font size="1">aaa</font></i><br>
-            Biography:<br>
-            <p>
-                zzz    </p>
+            <div style="border: solid 0.0625rem #c0c0c0; border-radius: .25rem; padding: 1rem; margin-top: 1rem; background: #fff;">
+                <h4>Biography:</h4>
+                It is the name of your true self. You've only forgotten. I know there is good in you. The Emperor hasn't driven it from you fully. That is why you couldn't destroy me. That's why you won't bring me to your Emperor now. I see you have constructed a new lightsaber. Your skills are complete. Indeed, you are powerful, as the Emperor has foreseen. Come with me. Obi-Wan once thought as you do. You don't know the power of the dark side. I must obey my master. I will not turn...and you'll be forced to kill me. If that is your destiny.
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="cs-footer">
-        <div class="cs-footer-navigation">
-            <div class="cs-main-wrap cs-flex">
-                <ul class="cs-footer-sub-navigation cs-inline-list">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a class="active" href="./themes.html">Themes</a></li>
-                    <li><a href="./applets.html">Applets</a></li>
-                    <li><a href="./desklets.html">Desklets</a></li>
-                    <li><a href="./extensions.html">Extensions</a></li>
-                    <li><a href="./login.html">Log In</a></li>
-                    <li><a href="./signup.html">Sign Up</a></li>
-                </ul>
-                <ul class="cs-footer-sub-navigation cs-inline-list">
-                    <li><a href="#">Documentation</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                </ul>
-            </div>
+<div class="cs-footer">
+    <div class="cs-footer-navigation">
+        <div class="cs-main-wrap cs-flex">
+            <ul class="cs-footer-sub-navigation cs-inline-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./themes.html">Themes</a></li>
+                <li><a href="./applets.html">Applets</a></li>
+                <li><a href="./desklets.html">Desklets</a></li>
+                <li><a href="./extensions.html">Extensions</a></li>
+                <li><a href="./login.html">Log In</a></li>
+                <li><a href="./signup.html">Sign Up</a></li>
+            </ul>
+            <ul class="cs-footer-sub-navigation cs-inline-list">
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
         </div>
-        <div class="cs-footer-copyright cs-main-wrap cs-flex">
-            <div class="cs-copyright">
-                Cinnamon is ©copyrighted 2011 and trademarked through the Linux Mark Institute. All rights reserved.
-            </div>
-            <div class="cs-sponsor">
-                Brought to you by
-                <a class="cs-link-alternate" href="//www.linuxmint.com">LINUX MINT</a>
-            </div>
+    </div>
+    <div class="cs-footer-copyright cs-main-wrap cs-flex">
+        <div class="cs-copyright">
+            Cinnamon is ©copyrighted 2011 and trademarked through the Linux Mark Institute. All rights reserved.
+        </div>
+        <div class="cs-sponsor">
+            Brought to you by
+            <a class="cs-link-alternate" href="//www.linuxmint.com">LINUX MINT</a>
         </div>
     </div>
 </div>
