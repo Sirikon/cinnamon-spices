@@ -15,9 +15,9 @@
     text-align: center;
 
     .cs-items-bg-image {
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         height: 15.3125rem;
         opacity: .85;
         width: 27.1875rem;
@@ -87,7 +87,7 @@ a {
 }
 
 .cs-items-list-info-bar {
-    background-color: $color-almost-white;
+    background: $color-off-white-1;
     box-sizing: border-box;
     font-size: .875rem;
     padding: .625rem;

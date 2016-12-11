@@ -1,4 +1,5 @@
 .cs-addons {
+    background: $color-off-white-4;
     padding: ($global-padding * 4) 0;
 }
 
@@ -16,6 +17,14 @@
     flex: 1;
     margin: 0 $global-padding;
     text-align: center;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     &:hover {
         a {

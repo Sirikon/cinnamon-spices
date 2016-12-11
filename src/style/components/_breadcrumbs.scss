@@ -1,5 +1,4 @@
 .cs-breadcrumbs {
-
     opacity: .5;
     margin-bottom: 1rem;
 
@@ -7,15 +6,18 @@
         opacity: 1;
     }
 
-    &>ul {
-        list-style: none;
+    li {
+        &::after {
+            content: '/';
+            display: inline-block;
+            font-size: 1rem;
+            margin: 0 .25rem 0 .375rem;
+        }
 
-        margin: 0;
-        padding: 0;
-
-        &>li {
-            display: inline;
+        &:last-child {
+            &::after {
+                display: none;
+            }
         }
     }
-
 }

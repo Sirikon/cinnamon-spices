@@ -1,6 +1,7 @@
 .cs-header {
     color: $header-color;
     height: $header-height;
+    justify-content: space-between;
     margin: auto;
     max-width: $global-max-width;
     padding: $header-padding-vertical 0;
@@ -8,11 +9,7 @@
 }
 
 .cs-header-logo {
-    display: block;
-    float: left;
     padding-top: .3125rem;
-
-
 
     img {
         display: block;
@@ -30,7 +27,6 @@
 }
 
 .cs-header-menu {
-    float: right;
     text-align: right;
 
     a {
@@ -44,9 +40,7 @@
         }
     }
 
-    &-link,
-    &-login,
-    &-signup {
+    &-link {
         color: $header-color;
         font-family: $font-roboto;
         font-size: .875rem;
@@ -57,14 +51,13 @@
     }
 
     &-login {
-        padding-left: $header-link-separation-between / 1.2;
+        padding-left: $header-link-separation-between;
         padding-right: $header-signup-horizontal-padding;
     }
 
     &-signup {
         height: $header-height;
         line-height: $header-height;
-        margin-left: 1rem;
         padding: 0 $header-signup-horizontal-padding;
     }
 }

@@ -5,89 +5,80 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="cs-flex-column">
 
-<div class="cs-landing-jumbotron cs-flex-column">
-    <div class="cs-header-wrap">
-        <div class="cs-header" id="cs-header">
-            <div class="cs-header-logo">
-                <img src="./resources/cinnamon.svg" alt="">
-                <div>spices</div>
-            </div>
-            <div class="cs-header-menu">
-                <a class="cs-header-menu-link" href="index.html">Home</a>
-                <a class="cs-header-menu-link active" href="themes.html">Themes</a>
-                <a class="cs-header-menu-link" href="applets.html">Applets</a>
-                <a class="cs-header-menu-link" href="desklets.html">Desklets</a>
-                <a class="cs-header-menu-link" href="extensions.html">Extensions</a>
-                <a class="cs-header-menu-login" href="login.html">Log In</a>
-                <a class="cs-header-menu-signup cs-button cs-button-thin-text" href="signup.html">Sign Up</a>
-            </div>
+<div class="cs-jumbotron cs-jumbotron-small">
+    <div class="cs-header cs-flex-row">
+        <div class="cs-header-logo cs-header-logo-inline cs-flex-row cs-flex-center">
+            <img src="./resources/cinnamon.svg" alt="">
+            <div>spices</div>
+        </div>
+        <div class="cs-header-menu">
+            <a class="cs-header-menu-link" href="index.html">Home</a>
+            <a class="cs-header-menu-link" href="themes.html">Themes</a>
+            <a class="cs-header-menu-link" href="applets.html">Applets</a>
+            <a class="cs-header-menu-link" href="desklets.html">Desklets</a>
+            <a class="cs-header-menu-link" href="extensions.html">Extensions</a>
+            <a class="cs-header-menu-link cs-header-menu-login" href="login.html">Log In</a>
+            <a class="cs-header-menu-signup cs-button cs-button-thin-text" href="signup.html">Sign Up</a>
         </div>
     </div>
 </div>
 
-<div class="cs-main-wrap cs-flex">
-    <div class="cs-main-left-sidebar">
-        <div class="title">Addons</div>
-        <ul>
-            <li class="active"><a href="themes.html">Themes</a></li>
-            <li><a href="applets.html">Applets</a></li>
-            <li><a href="desklets.html">Desklets</a></li>
-            <li><a href="extensions.html">Extensions</a></li>
+<div class="cs-main-wrap cs-profile cs-flex-column cs-flex-grow">
+    <div class="cs-breadcrumbs">
+        <ul class="cs-inline-list">
+            <li><a href="/index.html">Home</a></li>
+            <li>Edit My Profile</li>
         </ul>
     </div>
-    <div class="cs-main-content">
 
-        <div class="cs-breadcrumbs">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li>/</li>
-                <li>Edit My Profile</li>
+    <h1>Edit your profile</h1>
+
+    <div class="cs-profile-form cs-flex-row">
+        <div class="cs-sidebar">
+            <figure class="cs-profile-avatar" style="background-image: url('/resources/default_avatar.jpg')"></figure>
+            <ul class="cs-block-list">
+                <li>
+                    <h2>
+                        Clem
+                    </h2>
+                </li>
+                <li>
+                    <h4>Last login:</h4>
+                    2016-12-03 23:49:50
+                </li>
             </ul>
         </div>
 
-        <h1>Edit your profile</h1>
-
-        <form action="" class="cs-flex">
-            <div style="margin-right: 2rem">
-                <img src="http://cinnamon-spices.my/uploads/avatars/11093.jpg" style="float: left">
+        <form action="" class="cs-main-content cs-flex-grow">
+            <div class="cs-form-row cs-flex-column">
+                <label>Avatar</label>
+                <input type="file" name="avatar" size="20">
+                <em>(.jpg, 100x100px, 100KB max)</em>
             </div>
-            <div class="cs-flex-grow">
-                <div class="cs-form-row cs-flex-column">
-                    <label>Avatar</label>
-                    <input type="file" name="avatar" size="20">
-                    <em>(.jpg, 100x100px, 100KB max)</em>
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <label>Signature</label>
-                    <input type="text" name="signature" value="aaa">
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <label>Signature</label>
-                    <input type="text" name="signature" value="aaa">
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <label>Biography</label>
-                    <textarea name="biography" rows="5" cols="50">zzz</textarea>
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <label>Country</label>
-                    <select name="country"><option value="0">None</option>
-                    </select>
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <label>Distribution</label>
-                    <select name="distribution"><option value="0">None</option>
-                    </select>
-                </div>
-                <div class="cs-form-row cs-flex-column">
-                    <button class="cs-button">Submit</button>
-                </div>
-
+            <div class="cs-form-row cs-flex-column">
+                <label>Distribution</label>
+                <select name="distribution"><option value="0">None</option>
+                </select>
+            </div>
+            <div class="cs-form-row cs-flex-column">
+                <label>Country</label>
+                <select name="country"><option value="0">None</option>
+                </select>
+            </div>
+            <div class="cs-form-row cs-flex-column">
+                <label>Signature</label>
+                <input type="text" name="signature" value="aaa">
+            </div>
+            <div class="cs-form-row cs-flex-column">
+                <label>Biography</label>
+                <textarea name="biography" rows="5" cols="50">zzz</textarea>
+            </div>
+            <div class="cs-form-row cs-flex-column">
+                <button class="cs-button">Submit</button>
             </div>
         </form>
-
     </div>
 </div>
 
