@@ -1,0 +1,49 @@
+.cs-details-head {
+
+    h1 {
+        font-size: 1.9rem;
+        margin-right: .5rem;
+    }
+
+    & > div {
+        & > img {
+            height: 3rem;
+            margin-right: .5rem;
+            width: 3rem;
+        }
+    }
+}
+
+.cs-details-head-button {
+    font-size: .75rem;
+    font-weight: normal;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    padding: 0 1rem;
+    text-transform: none;
+}
+
+.cs-details-head-button-w {
+    background-color: transparent;
+    border: solid 1px $color-silver;
+    color: $color-black;
+    font-size: .75rem;
+    font-weight: normal;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    padding: 0 1rem;
+    text-transform: none;
+}
+
+.cs-item-details-screenshot {
+    max-width: 100%;
+    width: auto;
+}
+
+.cs-item-details-description {
+    background-color: $color-white;
+    border: solid 1px $color-silver;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
