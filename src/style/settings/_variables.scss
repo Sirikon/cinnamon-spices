@@ -15,7 +15,7 @@ $links-alt-hover: $primary-color;
 
 // Header
 $header-color: $color-white;
-$header-padding-vertical: $global-padding;
+$header-padding-vertical: ($global-padding * 1.25);
 $header-height: 2.25rem;
 $header-subtitle-color: $color-off-white-2;
 $header-link-separation-between: 1.75rem;
@@ -59,6 +59,10 @@ $spotlight-header-color: $primary-color-dark;
 $spotlight-item-header-color: $primary-color;
 $spotlight-item-description-color: $color-silver-3;
 $spotlight-item-publish-color: $color-silver-2;
+
+// Comments
+$comment-date-color: $color-silver;
+
 
 // Footer
 $footer-bg-color: $color-black;

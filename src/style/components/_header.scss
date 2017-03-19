@@ -1,15 +1,18 @@
 .cs-header {
     color: $header-color;
-    height: $header-height;
     justify-content: space-between;
     margin: auto;
     max-width: $global-max-width;
-    padding: $header-padding-vertical 0;
+    padding: $header-padding-vertical 1rem;
     width: 100%;
+
+    @media (min-width: 72rem) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .cs-header-logo {
-    padding-top: .3125rem;
 
     img {
         display: block;
@@ -31,6 +34,7 @@
 
     a {
         color: $links-alt-color;
+        box-sizing: border-box;
     }
 
     &-link,
@@ -44,7 +48,7 @@
         color: $header-color;
         font-family: $font-roboto;
         font-size: .875rem;
-        padding: .375rem $header-link-separation-between / 2;
+        padding: 0.375rem $header-link-separation-between / 3;
         text-decoration: none;
         text-transform: uppercase;
         vertical-align: middle;
