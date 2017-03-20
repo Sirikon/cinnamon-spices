@@ -1,11 +1,5 @@
 .cs-items-list-container {
-    margin: 1.25rem 0 0;
-}
-
-.cs-items-list-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 1.25rem;
+    margin: .75rem 0 0;
 }
 
 .cs-items-list-image {
@@ -15,12 +9,12 @@
     text-align: center;
 
     .cs-items-bg-image {
-        background-position: top;
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         height: 15.3125rem;
         opacity: .85;
-        width: 27.1875rem;
+        width: 100%;
     }
 
     &:hover {
@@ -81,7 +75,9 @@ a {
     background-color: $color-white;
     border: solid .0625rem $color-silver;
     border-radius: .25rem;
+    flex: 1 0 18rem;
     justify-content: space-between;
+    margin: .625rem 0 .625rem 1.25rem;
     overflow: hidden;
     width: auto;
 }
@@ -101,7 +97,7 @@ a {
         float: right;
         height: 2.1875rem;
         line-height: 2.1875rem;
-        margin-left: 1rem;
+        margin-left: .5rem;
 
         &>svg {
             fill: $color-off-white-3;
