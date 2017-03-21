@@ -1,8 +1,11 @@
 .cs-sidebar {
-    flex: 0 0 12.5rem;
+    margin-right: .5rem;
 
     .title {
         color: $sidebar-title-color;
+        position: inherit; // Fallback
+        position: sticky;
+        top: 1rem;
     }
 }
 
@@ -11,6 +14,9 @@
     border-radius: .125rem;
     list-style: none;
     padding: 0;
+    position: inherit; // Fallback
+    position: sticky;
+    top: 3.375rem;
     width: 10.625rem;
 
     li {
