@@ -83,7 +83,7 @@
     color: $color-off-white-3;
     font-size: .75rem;
     justify-content: space-between;
-    padding: .5rem;
+    padding: .5rem 1rem;
 
     .cs-sponsor {
         a {
@@ -98,5 +98,10 @@
                 color: $lm-brand-color;
             }
         }
+    }
+
+    @media (min-width: 72rem) {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
