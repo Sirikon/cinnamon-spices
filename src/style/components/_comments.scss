@@ -1,14 +1,12 @@
+.cs-comment-login {
+    .cs-button-social {
+        margin: 1rem 1rem 0 0;
+    }
+}
+
 
 .cs-comments-title {
     margin-bottom: 1rem;
-}
-
-.cs-comment-avatar {
-    & > img {
-        border-radius: .5rem;
-        height: 5rem;
-        width: 5rem;
-    }
 }
 
 .cs-comment-row {
@@ -27,6 +25,7 @@
 
 .cs-comment-image {
     img {
+        border-radius: .5rem;
         height: 5rem;
         width: 5rem;
     }
