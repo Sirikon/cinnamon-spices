@@ -34,6 +34,21 @@ module.exports = (gulp) => {
                 stream: true }));
     });
 
+    gulp.task('style:ci', () => {
+        return gulp.src(paths.style.src)
+            .pipe(sourcemaps.init())
+            .pipe(sass({outputStyle: 'compressed'})
+                .on('error', sass.logError))
+            .pipe(prefixer({
+              browsers: ['last 2 versions'],
+              cascade: true }))
+            .pipe(rename('style.css'))
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest(paths.ci.dist))
+            .pipe(browserSync.reload({
+                stream: true }));
+    });
+
     gulp.task('style:release', () => {
         return gulp.src(paths.style.src)
             .pipe(sass({outputStyle: 'compressed'})

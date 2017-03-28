@@ -12,3 +12,4 @@ require('./gulp/tasks/browser-sync')(gulp);
 // gulp.task('default', ['webserver', 'style:lint','style:dev', 'markup', 'resources', 'watch']);
 gulp.task('default', ['browserSync', 'style:lint','style:dev', 'markup', 'resources', 'watch']);
 gulp.task('release', ['style:release', 'markup', 'resources']);
+gulp.task('ci', ['browserSync:ci', 'style:lint', 'style:ci', 'watch:ci']);
