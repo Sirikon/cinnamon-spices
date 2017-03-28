@@ -37,6 +37,7 @@
 
     &-avatar {
         padding-left: $header-link-separation-between;
+
         img {
             border-radius: .25rem;
             height: 2.4375rem;
@@ -62,7 +63,11 @@
     }
 
     &-login {
-        padding: .625rem 1rem;
         margin-left: .5rem;
+        padding: .625rem 1rem;
+    }
+
+    &-logout {
+        padding: .5rem 1rem;
     }
 }
