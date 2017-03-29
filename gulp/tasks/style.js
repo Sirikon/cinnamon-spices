@@ -37,7 +37,7 @@ module.exports = (gulp) => {
     gulp.task('style:ci', () => {
         return gulp.src(paths.style.src)
             .pipe(sourcemaps.init())
-            .pipe(sass({outputStyle: 'compressed'})
+            .pipe(sass()
                 .on('error', sass.logError))
             .pipe(prefixer({
               browsers: ['last 2 versions'],
