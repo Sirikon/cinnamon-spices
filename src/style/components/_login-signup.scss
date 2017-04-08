@@ -39,8 +39,8 @@
     background-color: $color-white;
     border: solid .0625rem $color-silver;
     border-radius: .3rem;
-    padding: $global-padding ($global-padding * 2);
-    width: 20rem;
+    padding: $global-padding * 1.5;
+    max-width: 20rem;
 }
 
 .cs-login-signup-form {
@@ -81,6 +81,14 @@
 
 .cs-login-signup-call {
     font-size: .9rem;
-    margin: 1rem auto;
-    text-align: center;
+    margin: -2.5rem auto 0;
+
+    .cs-button-social {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+
+        }
+    }
 }

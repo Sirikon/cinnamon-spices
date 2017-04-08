@@ -8,4 +8,8 @@ module.exports = (gulp) => {
         gulp.watch(paths.markup.src, ['markup']);
         gulp.watch(paths.resources.src, ['resources']);
     });
+
+    gulp.task('watch:ci', () => {
+        gulp.watch(paths.style.src_watch, ['style:lint', 'style:ci']);
+    });
 }

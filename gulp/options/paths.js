@@ -13,5 +13,8 @@ module.exports = {
     resources: {
         src: 'src/resources/**/*',
         dist: 'dist/resources/'
+    },
+    ci: {
+        dist: '../'
     }
 }

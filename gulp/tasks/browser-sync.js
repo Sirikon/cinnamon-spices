@@ -21,4 +21,12 @@ module.exports = (gulp) => {
     })
   });
 
+  gulp.task('browserSync:ci', () => {
+    browserSync.init({
+      proxy: '192.168.2.2',
+      port: 8000,
+      ghostMode: false
+    })
+  });
+
 }

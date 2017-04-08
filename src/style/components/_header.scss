@@ -35,6 +35,15 @@
         color: $links-alt-color;
     }
 
+    &-avatar {
+        padding-left: $header-link-separation-between;
+        img {
+            border-radius: .25rem;
+            height: 2.4375rem;
+            width: 2.4375rem;
+        }
+    }
+
     &-link,
     &-login {
         &.active {
@@ -53,13 +62,7 @@
     }
 
     &-login {
-        padding-left: $header-link-separation-between;
-        padding-right: $header-signup-horizontal-padding;
-    }
-
-    &-signup {
-        height: $header-height;
-        line-height: $header-height;
-        padding: 0 $header-signup-horizontal-padding;
+        padding: .625rem 1rem;
+        margin-left: .5rem;
     }
 }
