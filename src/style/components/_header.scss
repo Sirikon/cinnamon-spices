@@ -36,11 +36,15 @@
     }
 
     &-avatar {
-        padding-left: $header-link-separation-between;
+        display: inline-block;
+        margin-top: -.125rem;
+        padding: 0 ($header-link-separation-between / 3);
+        vertical-align: middle;
+
         img {
             border-radius: .25rem;
-            height: 2.4375rem;
-            width: 2.4375rem;
+            height: 1.875rem;
+            width: 1.875rem;
         }
     }
 
@@ -53,16 +57,21 @@
 
     &-link {
         color: $header-color;
+        display: inline-block;
         font-family: $font-roboto;
         font-size: .875rem;
+        margin-right: 0;
         padding: .375rem $header-link-separation-between / 3;
         text-decoration: none;
         text-transform: uppercase;
-        vertical-align: middle;
     }
 
     &-login {
-        padding: .625rem 1rem;
         margin-left: .5rem;
+        padding: .625rem 1rem;
+    }
+
+    &-logout {
+        padding: .5rem 1rem;
     }
 }

@@ -28,28 +28,25 @@
     }
 }
 
-a {
-    &.cs-items-list-details {
-        flex-wrap: nowrap;
-        line-height: 2rem;
-        padding: .625rem;
+.cs-items-list-details {
+    flex-wrap: nowrap;
+    line-height: 2rem;
+    padding: .625rem;
+    text-decoration: none;
+
+    & > img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    & > label {
+        color: $item-title-color;
+        cursor: pointer;
+        flex-grow: 1;
+        font-size: 1.25rem;
+        margin-left: .625rem;
         text-decoration: none;
-        width: 17.1875rem;
-
-        & > img {
-            height: 3rem;
-            width: 3rem;
-        }
-
-        & > label {
-            color: $item-title-color;
-            cursor: pointer;
-            flex-grow: 1;
-            font-size: 1.25rem;
-            margin-left: .625rem;
-            text-decoration: none;
-            width: 100%;
-        }
+        width: 100%;
     }
 }
 
