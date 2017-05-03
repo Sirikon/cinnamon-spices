@@ -1,3 +1,6 @@
+#### _This repo has reached end of life_ ####
+
+
 # Cinnamon Spices Website #
 
 Repository for static content, implementing the new Cinnamon Spices
